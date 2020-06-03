@@ -1,0 +1,230 @@
+/* COLORS */
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+
+header {
+  background-color: #579C87;
+  display: flex;
+  justify-content: center;
+}
+header h1 {
+  display: inline-block;
+  font-size: 55px;
+  font-weight: 600;
+  color: #FDCB46;
+  margin: 35px 0;
+}
+
+.menus-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+}
+.menus-panel .menus {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid blue;
+}
+.menus-panel .menus div {
+  display: inline-block;
+  width: 35%;
+  height: 300px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 992px) {
+  .menus-panel .menus div {
+    width: 80%;
+  }
+}
+.menus-panel .menus div.enchanted-note {
+  background-color: #FCDFDB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menus-panel .menus div.enchanted-note h2 {
+  font-family: "Devonshire", cursive;
+  color: #3D1319;
+  font-size: 20px;
+  font-weight: normal;
+}
+.menus-panel .menus div.enchanted-note h3 {
+  font-family: "Sriracha", cursive;
+  color: #3D1319;
+  font-size: 25px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.menus-panel .menus div.enchanted-note a {
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.menus-panel .menus div.enchanted-note a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.menus-panel .menus div.french-chic {
+  background-color: #FFF5FE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .menus-panel .menus div.french-chic {
+    margin-top: 40px;
+  }
+}
+.menus-panel .menus div.french-chic h2 {
+  font-family: "Croissant One", cursive;
+  color: #C67412;
+  font-size: 14px;
+  font-weight: normal;
+}
+.menus-panel .menus div.french-chic h3 {
+  font-family: "Noto Serif", serif;
+  color: #C67412;
+  font-size: 25px;
+  font-weight: 500;
+}
+.menus-panel .menus div.french-chic a {
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.menus-panel .menus div.french-chic a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.menus-panel .menus div.delight-of-taste {
+  margin-top: 40px;
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menus-panel .menus div.delight-of-taste h2 {
+  font-family: "Dancing Script", cursive;
+  color: #0228DD;
+  font-size: 20px;
+  font-weight: normal;
+}
+.menus-panel .menus div.delight-of-taste h3 {
+  font-family: "Sriracha", cursive;
+  color: #0228DD;
+  font-size: 25px;
+  font-weight: normal;
+}
+.menus-panel .menus div.delight-of-taste a {
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.menus-panel .menus div.delight-of-taste a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.menus-panel .menus div.palette-of-taste {
+  margin-top: 40px;
+  background-color: #FDFFFD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menus-panel .menus div.palette-of-taste h2 {
+  font-family: "Kaushan Script", cursive;
+  color: #3D923A;
+  font-size: 20px;
+  font-weight: normal;
+}
+.menus-panel .menus div.palette-of-taste h3 {
+  font-family: "Sriracha", cursive;
+  color: #3D923A;
+  font-size: 25px;
+  font-weight: normal;
+}
+.menus-panel .menus div.palette-of-taste a {
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.menus-panel .menus div.palette-of-taste a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.menus-panel button {
+  height: 60px;
+  width: 350px;
+  border: none;
+  border-radius: 10px;
+  background-color: #579C87;
+  color: #FDCB46;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+@media (max-width: 992px) {
+  .menus-panel button {
+    height: 50px;
+    max-width: 250px;
+    font-size: 26px;
+  }
+}
+@media (max-width: 400px) {
+  .menus-panel button {
+    height: 40px;
+    max-width: 200px;
+    font-size: 18px;
+  }
+}
+
+footer {
+  background-color: #579C87;
+  display: flex;
+  justify-content: space-between;
+}
+footer h6 {
+  margin: 25px 15px;
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: capitalize;
+  color: #FDCB46;
+}
+@media (max-width: 992px) {
+  footer h6 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 400px) {
+  footer h6 {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

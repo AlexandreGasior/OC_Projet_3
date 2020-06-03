@@ -1,0 +1,28 @@
+/* FONTS */
+@mixin main-font{
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin secondary-font{
+  font-family: 'Sriracha', cursive;
+}
+
+@mixin enchanted-note-font{
+  font-family: 'Devonshire', cursive;
+}
+
+@mixin french-chic-font{
+  font-family: 'Croissant One', cursive;
+}
+
+@mixin french-chic-secondary-font{
+  font-family: 'Noto Serif', serif;
+}
+
+@mixin delight-of-taste-font{
+  font-family: 'Dancing Script', cursive;
+}
+
+@mixin palette-of-taste-font{
+  font-family: 'Kaushan Script', cursive;
+}
