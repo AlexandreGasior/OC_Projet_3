@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+/*GENERAL*/
 body {
   margin: 0;
   padding: 0;
@@ -39,18 +40,24 @@ header h1 {
   margin: 35px 0;
 }
 
+/*INDEX*/
 .menus-panel {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
+  margin-bottom: 65px;
 }
 .menus-panel .menus {
+  width: 75%;
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: 1px solid blue;
+}
+@media (max-width: 992px) {
+  .menus-panel .menus {
+    width: 90%;
+  }
 }
 .menus-panel .menus div {
   display: inline-block;
@@ -58,7 +65,7 @@ header h1 {
   height: 300px;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .menus-panel .menus div {
     width: 80%;
   }
@@ -98,7 +105,7 @@ header h1 {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 992px) {
+@media (max-width: 576px) {
   .menus-panel .menus div.french-chic {
     margin-top: 40px;
   }
@@ -204,7 +211,236 @@ header h1 {
   }
 }
 
+/*ENCHANTED-NOTE*/
+#enchanted-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#enchanted-note h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+#enchanted-note h2.heading {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#enchanted-note .enchanted-note-menu {
+  width: 75%;
+  background-color: #FCDFDB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  font-family: "Devonshire", cursive;
+  color: #3D1319;
+}
+@media (max-width: 992px) {
+  #enchanted-note .enchanted-note-menu {
+    width: 90%;
+  }
+}
+#enchanted-note .enchanted-note-menu i {
+  margin-top: 60px;
+  font-size: 70px;
+}
+#enchanted-note .enchanted-note-menu h2 {
+  margin-top: 10px;
+  font-size: 55px;
+  font-weight: bold;
+}
+#enchanted-note .enchanted-note-menu section {
+  width: 80%;
+}
+#enchanted-note .enchanted-note-menu section h3 {
+  font-size: 35px;
+  text-align: center;
+}
+#enchanted-note .enchanted-note-menu section p {
+  display: inline-block;
+  font-size: 24px;
+  width: 85%;
+}
+#enchanted-note .enchanted-note-menu section p.price {
+  width: 10%;
+  text-align: right;
+  vertical-align: top;
+}
+#enchanted-note .enchanted-note-menu section.dessert p {
+  width: 100%;
+}
+#enchanted-note .enchanted-note-menu h4 {
+  font-size: 47px;
+}
+#enchanted-note .enchanted-note-menu h4 i {
+  font-size: 62px;
+}
+
+/*FRENCH-CHIC*/
+#french-chic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#french-chic h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+#french-chic h2.heading {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#french-chic .french-chic-menu {
+  width: 75%;
+  background-color: #FFF5FE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  font-family: "Croissant One", cursive;
+  color: #C67412;
+}
+@media (max-width: 992px) {
+  #french-chic .french-chic-menu {
+    width: 90%;
+  }
+}
+#french-chic .french-chic-menu h2 {
+  margin-top: 60px;
+  font-size: 55px;
+  font-weight: bold;
+}
+#french-chic .french-chic-menu section {
+  width: 80%;
+}
+#french-chic .french-chic-menu section h3 {
+  font-size: 35px;
+  text-align: center;
+}
+#french-chic .french-chic-menu section p {
+  display: inline-block;
+  font-size: 24px;
+  width: 85%;
+}
+#french-chic .french-chic-menu section p.price {
+  width: 10%;
+  text-align: right;
+  vertical-align: top;
+}
+#french-chic .french-chic-menu section.dessert p {
+  width: 100%;
+}
+
+/*DELIGHT-OF-TASTE*/
+#delight-of-taste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#delight-of-taste h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+#delight-of-taste h2.heading {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#delight-of-taste .delight-of-taste-menu {
+  width: 75%;
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  font-family: "Dancing Script", cursive;
+  color: #0228DD;
+}
+@media (max-width: 992px) {
+  #delight-of-taste .delight-of-taste-menu {
+    width: 90%;
+  }
+}
+#delight-of-taste .delight-of-taste-menu h2 {
+  margin-top: 60px;
+  font-size: 55px;
+  font-weight: bold;
+}
+#delight-of-taste .delight-of-taste-menu section {
+  width: 80%;
+}
+#delight-of-taste .delight-of-taste-menu section h3 {
+  font-size: 35px;
+  text-align: center;
+}
+#delight-of-taste .delight-of-taste-menu section p {
+  display: inline-block;
+  font-size: 24px;
+  width: 85%;
+}
+#delight-of-taste .delight-of-taste-menu section p.price {
+  width: 10%;
+  text-align: right;
+  vertical-align: top;
+}
+
+/*PALETTE-OF-TASTE*/
+#palette-of-taste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#palette-of-taste h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+#palette-of-taste h2.heading {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#palette-of-taste .palette-of-taste-menu {
+  width: 75%;
+  background-color: #FDFFFD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  font-family: "Kaushan Script", cursive;
+  color: #3D923A;
+}
+@media (max-width: 992px) {
+  #palette-of-taste .palette-of-taste-menu {
+    width: 90%;
+  }
+}
+#palette-of-taste .palette-of-taste-menu h2 {
+  margin-top: 60px;
+  font-size: 55px;
+  font-weight: bold;
+}
+#palette-of-taste .palette-of-taste-menu section {
+  width: 80%;
+}
+#palette-of-taste .palette-of-taste-menu section h3 {
+  font-size: 35px;
+  text-align: center;
+}
+#palette-of-taste .palette-of-taste-menu section p {
+  display: inline-block;
+  font-size: 24px;
+  width: 85%;
+}
+#palette-of-taste .palette-of-taste-menu section p.price {
+  width: 10%;
+  text-align: right;
+  vertical-align: top;
+}
+
+/*FOOTER*/
 footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
   background-color: #579C87;
   display: flex;
   justify-content: space-between;

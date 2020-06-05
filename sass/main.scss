@@ -2,6 +2,7 @@
 @import "./Utils/mixins";
 @import "./Base/typography";
 
+/*GENERAL*/
 body{
   margin: 0;
   padding: 0;
@@ -35,23 +36,27 @@ header{
   }
 }
 
+/*INDEX*/
 .menus-panel{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
+  margin-bottom: 65px;
   .menus{
+    width: 75%;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border: 1px solid blue;
+    @media (max-width: 992px){
+      width: 90%;
+    }
     div{
       display: inline-block;
       width: 35%;
       height: 300px;
       box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
-      @media (max-width: 992px){
+      @media (max-width: 576px){
         width: 80%;
       }
       &.enchanted-note{
@@ -88,7 +93,7 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @media (max-width: 992px){
+        @media (max-width: 576px){
           margin-top: 40px;
         }
         h2{
@@ -192,7 +197,228 @@ header{
   }
 }
 
+/*ENCHANTED-NOTE*/
+#enchanted-note{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    &.heading{
+      text-shadow: 0 0 10px rgba(0,0,0,.2);
+    }
+  }
+  .enchanted-note-menu{
+    width: 75%;
+    background-color: $enchanted-note-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+    @include enchanted-note-font;
+    color: $enchanted-note-primary-color;
+    @media (max-width: 992px){
+      width: 90%;
+    }
+    i{
+      margin-top: 60px;
+      font-size: 70px;
+    }
+    h2{
+      margin-top: 10px;
+      font-size: 55px;
+      font-weight: bold;
+    }
+    section{
+      width: 80%;
+      h3{
+        font-size: 35px;
+        text-align: center;
+      }
+      p{
+        display: inline-block;
+        font-size: 24px;
+        width: 85%;
+        &.price{
+          width: 10%;
+          text-align: right;
+          vertical-align: top;
+        }
+      }
+      &.dessert p{
+        width: 100%;
+      }
+    }
+    h4{
+      font-size: 47px;
+      i{
+        font-size: 62px;
+      }
+    }
+  }
+}
+
+/*FRENCH-CHIC*/
+#french-chic{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    &.heading{
+      text-shadow: 0 0 10px rgba(0,0,0,.2);
+    }
+  }
+  .french-chic-menu{
+    width: 75%;
+    background-color: $french-chic-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+    @include french-chic-font;
+    color: $french-chic-primary-color;
+    @media (max-width: 992px){
+      width: 90%;
+    }
+    h2{
+      margin-top: 60px;
+      font-size: 55px;
+      font-weight: bold;
+    }
+    section{
+      width: 80%;
+      h3{
+        font-size: 35px;
+        text-align: center;
+      }
+      p{
+        display: inline-block;
+        font-size: 24px;
+        width: 85%;
+        &.price{
+          width: 10%;
+          text-align: right;
+          vertical-align: top;
+        }
+      }
+      &.dessert p{
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*DELIGHT-OF-TASTE*/
+#delight-of-taste{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    &.heading{
+      text-shadow: 0 0 10px rgba(0,0,0,.2);
+    }
+  }
+  .delight-of-taste-menu{
+    width: 75%;
+    background-color: $delight-of-taste-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+    @include delight-of-taste-font;
+    color: $delight-of-taste-primary-color;
+    @media (max-width: 992px){
+      width: 90%;
+    }
+    h2{
+      margin-top: 60px;
+      font-size: 55px;
+      font-weight: bold;
+    }
+    section{
+      width: 80%;
+      h3{
+        font-size: 35px;
+        text-align: center;
+      }
+      p{
+        display: inline-block;
+        font-size: 24px;
+        width: 85%;
+        &.price{
+          width: 10%;
+          text-align: right;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+
+/*PALETTE-OF-TASTE*/
+#palette-of-taste{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    &.heading{
+      text-shadow: 0 0 10px rgba(0,0,0,.2);
+    }
+  }
+  .palette-of-taste-menu{
+    width: 75%;
+    background-color: $palette-of-taste-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+    @include palette-of-taste-font;
+    color: $palette-of-taste-primary-color;
+    @media (max-width: 992px){
+      width: 90%;
+    }
+    h2{
+      margin-top: 60px;
+      font-size: 55px;
+      font-weight: bold;
+    }
+    section{
+      width: 80%;
+      h3{
+        font-size: 35px;
+        text-align: center;
+      }
+      p{
+        display: inline-block;
+        font-size: 24px;
+        width: 85%;
+        &.price{
+          width: 10%;
+          text-align: right;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+
+/*FOOTER*/
 footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
   background-color: $header-color;
   display: flex;
   justify-content: space-between;
