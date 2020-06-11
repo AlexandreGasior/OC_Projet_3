@@ -1,0 +1,75 @@
+/*ENCHANTED-NOTE*/
+#enchanted-note{
+  @include menu-page;
+  h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    &.heading{
+      text-shadow: 0 0 10px rgba(0,0,0,.2);
+    }
+  }
+  .enchanted-note-menu{
+    width: 75%;
+    background-color: $enchanted-note-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+    @include menus-font;
+    color: $enchanted-note-primary-color;
+    padding: 65px 0;
+    @media (max-width: 992px){
+      width: 90%;
+    }
+    i{
+      margin-top: 60px;
+      font-size: 70px;
+      @include linear-gradient($enchanted-note-secondary-color, $enchanted-note-tertiary-color);
+    }
+    h2{
+      margin-top: 10px;
+      font-size: 55px;
+      font-weight: bold;
+      @include enchanted-note-font;
+    }
+    section{
+      width: 80%;
+      h3{
+        font-size: 35px;
+        text-align: center;
+      }
+      &.entree{
+        margin-top: 100px;
+      }
+      &.meal{
+        margin-top: 75px;
+      }
+      &.dessert{
+        margin-bottom: 75px;
+      }
+      p{
+        display: inline-block;
+        margin: 10px 0;
+        font-size: 24px;
+        width: 85%;
+        &.price{
+          font-size: 26px;
+          font-weight: bold;
+          width: 10%;
+          text-align: right;
+          vertical-align: top;
+        }
+      }
+      &.dessert p{
+        width: 100%;
+      }
+    }
+    h4{
+      @include enchanted-note-font;
+      font-size: 47px;
+      i{
+        font-size: 62px;
+      }
+    }
+  }
+}

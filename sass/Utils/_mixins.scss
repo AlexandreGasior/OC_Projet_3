@@ -2,27 +2,48 @@
 @mixin main-font{
   font-family: 'Open Sans', sans-serif;
 }
-
-@mixin secondary-font{
-  font-family: 'Sriracha', cursive;
+@mixin menus-font{
+  font-family: 'Caveat', cursive;
 }
-
 @mixin enchanted-note-font{
   font-family: 'Devonshire', cursive;
 }
-
+@mixin enchanted-note-secondary-font{
+  font-family: 'Sriracha', cursive;
+}
 @mixin french-chic-font{
   font-family: 'Croissant One', cursive;
 }
-
 @mixin french-chic-secondary-font{
   font-family: 'Noto Serif', serif;
 }
-
 @mixin delight-of-taste-font{
   font-family: 'Dancing Script', cursive;
 }
-
 @mixin palette-of-taste-font{
   font-family: 'Kaushan Script', cursive;
+}
+
+/* TEXT LINEAR GRADIENT */
+@mixin linear-gradient($color1, $color2){
+  background: -webkit-linear-gradient(315deg, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* EACH MENU PRESENTATION INDEX */
+@mixin menu-display($bg-color){
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* EACH MENU PAGE */
+@mixin menu-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
 }

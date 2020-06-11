@@ -1,0 +1,20 @@
+/*GENERAL*/
+body{
+  margin: 0;
+  padding: 0;
+  @include main-font;
+}
+
+a{
+  text-align: center;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+  &:visited{
+    text-decoration: none;
+  }
+  &:focus{
+    text-decoration: none;
+  }
+}
