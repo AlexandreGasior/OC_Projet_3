@@ -21,10 +21,10 @@
 }
 @keyframes wiggle {
   25% {
-    transform: translateX(1%);
+    transform: rotate(1deg);
   }
   75% {
-    transform: translateX(-1%);
+    transform: rotate(-1deg);
   }
 }
 /*GENERAL*/
@@ -389,15 +389,15 @@ footer h6:hover {
     flex-direction: column;
   }
 }
-#enchanted-note .enchanted-note-menu section div.menu-section-heading .before-entree-title, #enchanted-note .enchanted-note-menu section div.menu-section-heading .after-entree-title {
+#enchanted-note .enchanted-note-menu section div.menu-section-heading .before-heading-title, #enchanted-note .enchanted-note-menu section div.menu-section-heading .after-heading-title {
   width: 30%;
 }
 @media (max-width: 992px) {
-  #enchanted-note .enchanted-note-menu section div.menu-section-heading .before-entree-title, #enchanted-note .enchanted-note-menu section div.menu-section-heading .after-entree-title {
+  #enchanted-note .enchanted-note-menu section div.menu-section-heading .before-heading-title, #enchanted-note .enchanted-note-menu section div.menu-section-heading .after-heading-title {
     width: auto;
   }
 }
-#enchanted-note .enchanted-note-menu section div.menu-section-heading .entree-title hr {
+#enchanted-note .enchanted-note-menu section div.menu-section-heading .heading-title hr {
   border: 1px solid #3D1319;
 }
 #enchanted-note .enchanted-note-menu section p {
