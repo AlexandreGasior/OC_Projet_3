@@ -2,6 +2,7 @@
 /* FONTS */
 /* TEXT LINEAR GRADIENT */
 /* EACH MENU PRESENTATION INDEX */
+/* HOVER ON MENUS */
 /* EACH MENU PAGE */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
@@ -16,6 +17,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes wiggle {
+  25% {
+    transform: translateX(1%);
+  }
+  75% {
+    transform: translateX(-1%);
   }
 }
 /*GENERAL*/
@@ -70,6 +79,9 @@ footer h6 {
   text-transform: capitalize;
   color: #FDCB46;
 }
+footer h6:hover {
+  animation: wiggle 300ms infinite;
+}
 @media (max-width: 992px) {
   footer h6 {
     font-size: 1.2em;
@@ -101,38 +113,53 @@ footer h6 {
     padding: 50px 0;
   }
 }
-.menus-panel .menus div {
+.menus-panel .menus section {
   display: inline-block;
   width: 35%;
   height: 300px;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 @media (max-width: 576px) {
-  .menus-panel .menus div {
+  .menus-panel .menus section {
     width: 80%;
   }
 }
-.menus-panel .menus div.enchanted-note {
+.menus-panel .menus section.enchanted-note {
   background-color: #FCDFDB;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.menus-panel .menus div.enchanted-note i {
+.menus-panel .menus section.enchanted-note .enchanted-note-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.menus-panel .menus section.enchanted-note .enchanted-note-content:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+.menus-panel .menus section.enchanted-note i {
   font-size: 2.5em;
   background: -webkit-linear-gradient(315deg, #EF475F, #F6916A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menus-panel .menus div.enchanted-note h2 {
+.menus-panel .menus section.enchanted-note h2 {
   font-family: "Devonshire", cursive;
   color: #3D1319;
   font-size: 1.5em;
   font-weight: normal;
   margin: 0 0 0.5em 0;
 }
-.menus-panel .menus div.enchanted-note h3 {
+.menus-panel .menus section.enchanted-note h3 {
   font-family: "Sriracha", cursive;
   color: #3D1319;
   font-size: 1.5em;
@@ -140,27 +167,33 @@ footer h6 {
   text-transform: uppercase;
   margin: 0;
 }
-.menus-panel .menus div.enchanted-note a {
-  transform: scale(1);
-  transition: transform 300ms;
-}
-.menus-panel .menus div.enchanted-note a:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-.menus-panel .menus div.french-chic {
+.menus-panel .menus section.french-chic {
   background-color: #FFF5FE;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.menus-panel .menus section.french-chic .french-chic-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.menus-panel .menus section.french-chic .french-chic-content:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
 @media (max-width: 576px) {
-  .menus-panel .menus div.french-chic {
+  .menus-panel .menus section.french-chic {
     margin-top: 40px;
   }
 }
-.menus-panel .menus div.french-chic h2 {
+.menus-panel .menus section.french-chic h2 {
   font-family: "Croissant One", cursive;
   background: -webkit-linear-gradient(315deg, #C67412, #6E4CCC);
   -webkit-background-clip: text;
@@ -169,22 +202,14 @@ footer h6 {
   font-weight: normal;
   margin: 0 0 0.5em 0;
 }
-.menus-panel .menus div.french-chic h3 {
+.menus-panel .menus section.french-chic h3 {
   font-family: "Noto Serif", serif;
   color: #C67412;
   font-size: 1.5em;
   font-weight: bold;
   margin: 0;
 }
-.menus-panel .menus div.french-chic a {
-  transform: scale(1);
-  transition: transform 300ms;
-}
-.menus-panel .menus div.french-chic a:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-.menus-panel .menus div.delight-of-taste {
+.menus-panel .menus section.delight-of-taste {
   margin-top: 40px;
   background-color: #F9F9F9;
   display: flex;
@@ -192,7 +217,21 @@ footer h6 {
   justify-content: center;
   align-items: center;
 }
-.menus-panel .menus div.delight-of-taste h2 {
+.menus-panel .menus section.delight-of-taste .delight-of-taste-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.menus-panel .menus section.delight-of-taste .delight-of-taste-content:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+.menus-panel .menus section.delight-of-taste h2 {
   font-family: "Dancing Script", cursive;
   background: -webkit-linear-gradient(315deg, #0228DD, #229DF9);
   -webkit-background-clip: text;
@@ -201,22 +240,14 @@ footer h6 {
   font-weight: normal;
   margin: 0 0 0.5em 0;
 }
-.menus-panel .menus div.delight-of-taste h3 {
+.menus-panel .menus section.delight-of-taste h3 {
   font-family: "Caveat", cursive;
   color: #229DF9;
   font-size: 2em;
   font-weight: normal;
   margin: 0;
 }
-.menus-panel .menus div.delight-of-taste a {
-  transform: scale(1);
-  transition: transform 300ms;
-}
-.menus-panel .menus div.delight-of-taste a:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-.menus-panel .menus div.palette-of-taste {
+.menus-panel .menus section.palette-of-taste {
   margin-top: 40px;
   background-color: #FDFFFD;
   display: flex;
@@ -224,7 +255,21 @@ footer h6 {
   justify-content: center;
   align-items: center;
 }
-.menus-panel .menus div.palette-of-taste h2 {
+.menus-panel .menus section.palette-of-taste .palette-of-taste-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.menus-panel .menus section.palette-of-taste .palette-of-taste-content:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+.menus-panel .menus section.palette-of-taste h2 {
   font-family: "Kaushan Script", cursive;
   background: -webkit-linear-gradient(315deg, #3D923A, #BEFF7F);
   -webkit-background-clip: text;
@@ -233,20 +278,12 @@ footer h6 {
   font-weight: normal;
   margin: 0 0 0.5em 0;
 }
-.menus-panel .menus div.palette-of-taste h3 {
+.menus-panel .menus section.palette-of-taste h3 {
   font-family: "Caveat", cursive;
   color: #5ebe5b;
   font-size: 2em;
   font-weight: normal;
   margin: 0;
-}
-.menus-panel .menus div.palette-of-taste a {
-  transform: scale(1);
-  transition: transform 300ms;
-}
-.menus-panel .menus div.palette-of-taste a:hover {
-  cursor: pointer;
-  transform: scale(1.2);
 }
 .menus-panel button {
   height: 60px;
@@ -331,6 +368,7 @@ footer h6 {
 #enchanted-note .enchanted-note-menu section h3 {
   font-size: 35px;
   text-align: center;
+  margin: 0;
 }
 #enchanted-note .enchanted-note-menu section.entree {
   margin-top: 100px;
@@ -340,6 +378,27 @@ footer h6 {
 }
 #enchanted-note .enchanted-note-menu section.dessert {
   margin-bottom: 75px;
+}
+#enchanted-note .enchanted-note-menu section div.menu-section-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  #enchanted-note .enchanted-note-menu section div.menu-section-heading {
+    flex-direction: column;
+  }
+}
+#enchanted-note .enchanted-note-menu section div.menu-section-heading .before-entree-title, #enchanted-note .enchanted-note-menu section div.menu-section-heading .after-entree-title {
+  width: 30%;
+}
+@media (max-width: 992px) {
+  #enchanted-note .enchanted-note-menu section div.menu-section-heading .before-entree-title, #enchanted-note .enchanted-note-menu section div.menu-section-heading .after-entree-title {
+    width: auto;
+  }
+}
+#enchanted-note .enchanted-note-menu section div.menu-section-heading .entree-title hr {
+  border: 1px solid #3D1319;
 }
 #enchanted-note .enchanted-note-menu section p {
   display: inline-block;

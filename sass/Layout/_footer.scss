@@ -13,6 +13,9 @@ footer{
     font-size: 1.6em;
     text-transform: capitalize;
     color: $font-color;
+    &:hover{
+      animation: wiggle 300ms infinite;
+    }
     @media (max-width: 992px){
       font-size: 1.2em;
     }
