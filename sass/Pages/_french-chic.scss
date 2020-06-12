@@ -32,18 +32,22 @@
       h3{
         font-size: 35px;
         text-align: center;
+        margin: 0;
       }
       &.entree{
         margin-top: 100px;
         color: $french-chic-primary-color;
+        @include menu-heading-section($french-chic-primary-color);
       }
       &.meal{
         margin-top: 75px;
         color: $french-chic-secondary-color;
+        @include menu-heading-section($french-chic-secondary-color);
       }
       &.dessert{
-        margin-top: 75px;
+        margin: 75px 0;
         color: $french-chic-tertiary-color;
+        @include menu-heading-section($french-chic-tertiary-color);
       }
       p{
         display: inline-block;

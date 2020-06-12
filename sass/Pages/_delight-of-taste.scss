@@ -32,6 +32,7 @@
         font-size: 35px;
         font-weight: normal;
         text-align: center;
+        margin: 0;
       }
       &.entree{
         margin-top: 100px;
@@ -40,8 +41,9 @@
         margin-top: 75px;
       }
       &.dessert{
-        margin-bottom: 75px;
+        margin: 75px 0;
       }
+      @include menu-heading-section;
       p{
         display: inline-block;
         margin: 10px 0;

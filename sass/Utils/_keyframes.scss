@@ -7,3 +7,8 @@
   25% {transform: rotate(1deg);}
   75% {transform: rotate(1deg*-1);}
 }
+
+@keyframes underline-animation{
+  0% {width: 0%}
+  100% {width: 100%}
+}

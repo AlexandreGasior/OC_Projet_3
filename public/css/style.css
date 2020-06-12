@@ -4,6 +4,7 @@
 /* EACH MENU PRESENTATION INDEX */
 /* HOVER ON MENUS */
 /* EACH MENU PAGE */
+/* HEADING SECTION ON MENU PAGE */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
@@ -25,6 +26,14 @@
   }
   75% {
     transform: rotate(-1deg);
+  }
+}
+@keyframes underline-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
   }
 }
 /*GENERAL*/
@@ -377,12 +386,13 @@ footer h6:hover {
   margin-top: 75px;
 }
 #enchanted-note .enchanted-note-menu section.dessert {
-  margin-bottom: 75px;
+  margin: 75px 0;
 }
 #enchanted-note .enchanted-note-menu section div.menu-section-heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 992px) {
   #enchanted-note .enchanted-note-menu section div.menu-section-heading {
@@ -392,13 +402,22 @@ footer h6:hover {
 #enchanted-note .enchanted-note-menu section div.menu-section-heading .before-heading-title, #enchanted-note .enchanted-note-menu section div.menu-section-heading .after-heading-title {
   width: 30%;
 }
+#enchanted-note .enchanted-note-menu section div.menu-section-heading .before-heading-title img, #enchanted-note .enchanted-note-menu section div.menu-section-heading .after-heading-title img {
+  max-width: 100%;
+}
 @media (max-width: 992px) {
   #enchanted-note .enchanted-note-menu section div.menu-section-heading .before-heading-title, #enchanted-note .enchanted-note-menu section div.menu-section-heading .after-heading-title {
     width: auto;
   }
 }
+#enchanted-note .enchanted-note-menu section div.menu-section-heading .after-heading-title {
+  text-align: right;
+}
 #enchanted-note .enchanted-note-menu section div.menu-section-heading .heading-title hr {
   border: 1px solid #3D1319;
+}
+#enchanted-note .enchanted-note-menu section .heading-title:hover hr {
+  animation: underline-animation 2s;
 }
 #enchanted-note .enchanted-note-menu section p {
   display: inline-block;
@@ -468,18 +487,103 @@ footer h6:hover {
 #french-chic .french-chic-menu section h3 {
   font-size: 35px;
   text-align: center;
+  margin: 0;
 }
 #french-chic .french-chic-menu section.entree {
   margin-top: 100px;
   color: #C67412;
 }
+#french-chic .french-chic-menu section.entree div.menu-section-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  #french-chic .french-chic-menu section.entree div.menu-section-heading {
+    flex-direction: column;
+  }
+}
+#french-chic .french-chic-menu section.entree div.menu-section-heading .before-heading-title, #french-chic .french-chic-menu section.entree div.menu-section-heading .after-heading-title {
+  width: 30%;
+}
+#french-chic .french-chic-menu section.entree div.menu-section-heading .before-heading-title img, #french-chic .french-chic-menu section.entree div.menu-section-heading .after-heading-title img {
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  #french-chic .french-chic-menu section.entree div.menu-section-heading .before-heading-title, #french-chic .french-chic-menu section.entree div.menu-section-heading .after-heading-title {
+    width: auto;
+  }
+}
+#french-chic .french-chic-menu section.entree div.menu-section-heading .after-heading-title {
+  text-align: right;
+}
+#french-chic .french-chic-menu section.entree div.menu-section-heading .heading-title hr {
+  border: 1px solid #C67412;
+}
 #french-chic .french-chic-menu section.meal {
   margin-top: 75px;
   color: #A56799;
 }
+#french-chic .french-chic-menu section.meal div.menu-section-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  #french-chic .french-chic-menu section.meal div.menu-section-heading {
+    flex-direction: column;
+  }
+}
+#french-chic .french-chic-menu section.meal div.menu-section-heading .before-heading-title, #french-chic .french-chic-menu section.meal div.menu-section-heading .after-heading-title {
+  width: 30%;
+}
+#french-chic .french-chic-menu section.meal div.menu-section-heading .before-heading-title img, #french-chic .french-chic-menu section.meal div.menu-section-heading .after-heading-title img {
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  #french-chic .french-chic-menu section.meal div.menu-section-heading .before-heading-title, #french-chic .french-chic-menu section.meal div.menu-section-heading .after-heading-title {
+    width: auto;
+  }
+}
+#french-chic .french-chic-menu section.meal div.menu-section-heading .after-heading-title {
+  text-align: right;
+}
+#french-chic .french-chic-menu section.meal div.menu-section-heading .heading-title hr {
+  border: 1px solid #A56799;
+}
 #french-chic .french-chic-menu section.dessert {
-  margin-top: 75px;
+  margin: 75px 0;
   color: #6E4CCC;
+}
+#french-chic .french-chic-menu section.dessert div.menu-section-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  #french-chic .french-chic-menu section.dessert div.menu-section-heading {
+    flex-direction: column;
+  }
+}
+#french-chic .french-chic-menu section.dessert div.menu-section-heading .before-heading-title, #french-chic .french-chic-menu section.dessert div.menu-section-heading .after-heading-title {
+  width: 30%;
+}
+#french-chic .french-chic-menu section.dessert div.menu-section-heading .before-heading-title img, #french-chic .french-chic-menu section.dessert div.menu-section-heading .after-heading-title img {
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  #french-chic .french-chic-menu section.dessert div.menu-section-heading .before-heading-title, #french-chic .french-chic-menu section.dessert div.menu-section-heading .after-heading-title {
+    width: auto;
+  }
+}
+#french-chic .french-chic-menu section.dessert div.menu-section-heading .after-heading-title {
+  text-align: right;
+}
+#french-chic .french-chic-menu section.dessert div.menu-section-heading .heading-title hr {
+  border: 1px solid #6E4CCC;
 }
 #french-chic .french-chic-menu section p {
   display: inline-block;
@@ -541,6 +645,7 @@ footer h6:hover {
   font-size: 35px;
   font-weight: normal;
   text-align: center;
+  margin: 0;
 }
 #delight-of-taste .delight-of-taste-menu section.entree {
   margin-top: 100px;
@@ -549,7 +654,35 @@ footer h6:hover {
   margin-top: 75px;
 }
 #delight-of-taste .delight-of-taste-menu section.dessert {
-  margin-bottom: 75px;
+  margin: 75px 0;
+}
+#delight-of-taste .delight-of-taste-menu section div.menu-section-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  #delight-of-taste .delight-of-taste-menu section div.menu-section-heading {
+    flex-direction: column;
+  }
+}
+#delight-of-taste .delight-of-taste-menu section div.menu-section-heading .before-heading-title, #delight-of-taste .delight-of-taste-menu section div.menu-section-heading .after-heading-title {
+  width: 30%;
+}
+#delight-of-taste .delight-of-taste-menu section div.menu-section-heading .before-heading-title img, #delight-of-taste .delight-of-taste-menu section div.menu-section-heading .after-heading-title img {
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  #delight-of-taste .delight-of-taste-menu section div.menu-section-heading .before-heading-title, #delight-of-taste .delight-of-taste-menu section div.menu-section-heading .after-heading-title {
+    width: auto;
+  }
+}
+#delight-of-taste .delight-of-taste-menu section div.menu-section-heading .after-heading-title {
+  text-align: right;
+}
+#delight-of-taste .delight-of-taste-menu section div.menu-section-heading .heading-title hr {
+  border: 1px solid black;
 }
 #delight-of-taste .delight-of-taste-menu section p {
   display: inline-block;
@@ -609,6 +742,7 @@ footer h6:hover {
   font-size: 35px;
   font-weight: normal;
   text-align: center;
+  margin: 0;
 }
 #palette-of-taste .palette-of-taste-menu section.entree {
   margin-top: 100px;
@@ -617,7 +751,35 @@ footer h6:hover {
   margin-top: 75px;
 }
 #palette-of-taste .palette-of-taste-menu section.dessert {
-  margin-bottom: 75px;
+  margin: 75px 0;
+}
+#palette-of-taste .palette-of-taste-menu section div.menu-section-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  #palette-of-taste .palette-of-taste-menu section div.menu-section-heading {
+    flex-direction: column;
+  }
+}
+#palette-of-taste .palette-of-taste-menu section div.menu-section-heading .before-heading-title, #palette-of-taste .palette-of-taste-menu section div.menu-section-heading .after-heading-title {
+  width: 30%;
+}
+#palette-of-taste .palette-of-taste-menu section div.menu-section-heading .before-heading-title img, #palette-of-taste .palette-of-taste-menu section div.menu-section-heading .after-heading-title img {
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  #palette-of-taste .palette-of-taste-menu section div.menu-section-heading .before-heading-title, #palette-of-taste .palette-of-taste-menu section div.menu-section-heading .after-heading-title {
+    width: auto;
+  }
+}
+#palette-of-taste .palette-of-taste-menu section div.menu-section-heading .after-heading-title {
+  text-align: right;
+}
+#palette-of-taste .palette-of-taste-menu section div.menu-section-heading .heading-title hr {
+  border: 1px solid black;
 }
 #palette-of-taste .palette-of-taste-menu section p {
   display: inline-block;
