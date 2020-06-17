@@ -24,6 +24,7 @@
       margin-top: 60px;
       font-size: 75px;
       font-weight: bold;
+      @include delight-of-taste-font;
       @include linear-gradient($delight-of-taste-primary-color, $delight-of-taste-secondary-color);
     }
     section{
