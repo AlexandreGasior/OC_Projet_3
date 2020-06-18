@@ -44,7 +44,7 @@
       &.dessert{
         margin: 75px 0;
       }
-      @include menu-heading-section;
+      @include menu-heading-section($delight-of-taste-primary-color);
       p{
         display: inline-block;
         margin: 10px 0;

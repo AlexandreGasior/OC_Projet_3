@@ -43,7 +43,7 @@
       &.dessert{
         margin: 75px 0;
       }
-      @include menu-heading-section;
+      @include menu-heading-section($palette-of-taste-secondary-color);
       p{
         display: inline-block;
         margin: 10px 0;

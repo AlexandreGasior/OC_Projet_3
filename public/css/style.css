@@ -12,6 +12,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@keyframes menu-hover {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+@keyframes menu-hover-reverse {
+  0% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 @keyframes dots {
   0% {
     opacity: 0;
@@ -148,12 +176,10 @@ footer h6:hover {
   align-items: center;
   width: 100%;
   height: 100%;
-  transform: scale(1);
-  transition: transform 300ms;
+  animation: menu-hover-reverse 300ms ease-in-out;
 }
 .menus-panel .menus section.enchanted-note .enchanted-note-content:hover {
-  transform: scale(1.2);
-  opacity: 0.7;
+  animation: menu-hover 300ms ease-in-out forwards;
 }
 .menus-panel .menus section.enchanted-note i {
   font-size: 2.5em;
@@ -190,12 +216,10 @@ footer h6:hover {
   align-items: center;
   width: 100%;
   height: 100%;
-  transform: scale(1);
-  transition: transform 300ms;
+  animation: menu-hover-reverse 300ms ease-in-out;
 }
 .menus-panel .menus section.french-chic .french-chic-content:hover {
-  transform: scale(1.2);
-  opacity: 0.7;
+  animation: menu-hover 300ms ease-in-out forwards;
 }
 @media (max-width: 576px) {
   .menus-panel .menus section.french-chic {
@@ -233,12 +257,10 @@ footer h6:hover {
   align-items: center;
   width: 100%;
   height: 100%;
-  transform: scale(1);
-  transition: transform 300ms;
+  animation: menu-hover-reverse 300ms ease-in-out;
 }
 .menus-panel .menus section.delight-of-taste .delight-of-taste-content:hover {
-  transform: scale(1.2);
-  opacity: 0.7;
+  animation: menu-hover 300ms ease-in-out forwards;
 }
 .menus-panel .menus section.delight-of-taste h2 {
   font-family: "Dancing Script", cursive;
@@ -271,12 +293,10 @@ footer h6:hover {
   align-items: center;
   width: 100%;
   height: 100%;
-  transform: scale(1);
-  transition: transform 300ms;
+  animation: menu-hover-reverse 300ms ease-in-out;
 }
 .menus-panel .menus section.palette-of-taste .palette-of-taste-content:hover {
-  transform: scale(1.2);
-  opacity: 0.7;
+  animation: menu-hover 300ms ease-in-out forwards;
 }
 .menus-panel .menus section.palette-of-taste h2 {
   font-family: "Kaushan Script", cursive;
@@ -685,7 +705,7 @@ footer h6:hover {
   text-align: right;
 }
 #delight-of-taste .delight-of-taste-menu section div.menu-section-heading .heading-title hr {
-  border: 1px solid black;
+  border: 1px solid #0228DD;
 }
 #delight-of-taste .delight-of-taste-menu section p {
   display: inline-block;
@@ -782,7 +802,7 @@ footer h6:hover {
   text-align: right;
 }
 #palette-of-taste .palette-of-taste-menu section div.menu-section-heading .heading-title hr {
-  border: 1px solid black;
+  border: 1px solid #BEFF7F;
 }
 #palette-of-taste .palette-of-taste-menu section p {
   display: inline-block;
