@@ -1,52 +1,46 @@
 /*ENCHANTED-NOTE*/
 #enchanted-note{
-  @include menu-page;
+  @include menu-page-container;
   h2{
-    font-size: 45px;
-    margin-bottom: 20px;
-    &.heading{
-      text-shadow: 0 0 10px rgba(0,0,0,.2);
-    }
+    font-size: map-get($font-size-general, h2-each-page-presentation);
+    @include main-title;
   }
-  .enchanted-note-menu{
-    width: 75%;
-    background-color: $enchanted-note-bg;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+  .enchanted-note__menu{
     @include menus-font;
-    color: $enchanted-note-primary-color;
-    padding: 65px 0;
-    @media (max-width: map-get($breakpoint, large)){
-      width: 90%;
-    }
+    @include each-menu-display($enchanted-note-bg, $enchanted-note-primary-color);
     i{
       margin-top: 60px;
-      font-size: 70px;
+      font-size: map-get($font-size-enchanted-note, enchanted-note__menu__logo--main);
       @include linear-gradient($enchanted-note-secondary-color, $enchanted-note-third-color);
     }
     h2{
+      font-size: map-get($font-size-enchanted-note, h2-enchanted-note__menu);
       margin-top: 10px;
-      font-size: 55px;
       font-weight: bold;
+      text-align: center;
       @include enchanted-note-font;
+      @media (max-width: map-get($breakpoint, small)){
+        font-size: map-get($font-size-enchanted-note, h2-enchanted-note__menu--small);
+      }
     }
     section{
       width: 80%;
       h3{
-        font-size: 35px;
+        font-size: map-get($font-size-enchanted-note, h3-enchanted-note__menu);
         text-align: center;
         margin: 0;
       }
-      &.entree{
+      &.menu__entree{
         margin-top: 100px;
       }
-      &.meal{
+      &.menu__meal{
         margin-top: 75px;
       }
-      &.dessert{
+      &.menu__dessert{
         margin: 75px 0;
+        p{
+          width: 100%;
+        }
       }
       @include menu-heading-section($enchanted-note-primary-color);
       .heading-title:hover hr{
@@ -55,25 +49,22 @@
       p{
         display: inline-block;
         margin: 10px 0;
-        font-size: 24px;
+        font-size: map-get($font-size-enchanted-note, enchanted-note__paragraph);
         width: 85%;
         &.price{
-          font-size: 26px;
+          font-size: map-get($font-size-enchanted-note, enchanted-note__price);
           font-weight: bold;
           width: 10%;
           text-align: right;
           vertical-align: top;
         }
       }
-      &.dessert p{
-        width: 100%;
-      }
     }
     h4{
       @include enchanted-note-font;
-      font-size: 47px;
+      font-size: map-get($font-size-enchanted-note, h4-enchanted-note__menu);
       i{
-        font-size: 62px;
+        font-size: map-get($font-size-enchanted-note, enchanted-note__menu__logo--secondary);
       }
     }
   }

@@ -1,10 +1,10 @@
 /* INDEX */
-.menus-panel{
+.container{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 65px;
-  .menus{
+  .menus-prev{
     width: 75%;
     padding: 50px;
     display: flex;
@@ -23,33 +23,33 @@
       @media (max-width: map-get($breakpoint, small)){
         width: 80%;
       }
-      &.enchanted-note{
-        .enchanted-note-content{
+      &.menus-prev__enchanted-note{
+        .enchanted-note__content{
           @include menu-hover;
         }
         @include menu-display($enchanted-note-bg);
         i{
-          font-size: 2.5em;
+          font-size: map-get($font-size-enchanted-note, enchanted-note__logo);
           @include linear-gradient($enchanted-note-secondary-color, $enchanted-note-third-color);
         }
         h2{
           @include enchanted-note-font;
           color: $enchanted-note-primary-color;
-          font-size: 1.5em;
+          font-size: map-get($font-size-enchanted-note, h2-enchanted-note);
           font-weight: normal;
           margin: 0 0 0.5em 0;
         }
         h3{
           @include enchanted-note-secondary-font;
           color: $enchanted-note-primary-color;
-          font-size: 1.5em;
+          font-size: map-get($font-size-enchanted-note, h3-enchanted-note);
           font-weight: 100;
           text-transform: uppercase;
           margin: 0;
         }
       }
-      &.french-chic{
-        .french-chic-content{
+      &.menus-prev__french-chic{
+        .french-chic__content{
           @include menu-hover;
         }
         @include menu-display($french-chic-bg);
@@ -59,20 +59,23 @@
         h2{
           @include french-chic-font;
           @include linear-gradient($french-chic-primary-color, $french-chic-third-color);
-          font-size: 1em;
+          font-size: map-get($font-size-french-chic, h2-french-chic);
           font-weight: normal;
           margin: 0 0 0.5em 0;
+          @media (max-width: map-get($breakpoint, large)){
+            font-size: map-get($font-size-french-chic, h2-french-chic--large);
+          }
         }
         h3{
           @include french-chic-secondary-font;
           color: $french-chic-primary-color;
-          font-size: 1.5em;
+          font-size: map-get($font-size-french-chic, h3-french-chic);
           font-weight: bold;
           margin: 0;
         }
       }
-      &.delight-of-taste{
-        .delight-of-taste-content{
+      &.menus-prev__delight-of-taste{
+        .delight-of-taste__content{
           @include menu-hover;
         }
         margin-top: 40px;
@@ -80,20 +83,21 @@
         h2{
           @include delight-of-taste-font;
           @include linear-gradient($delight-of-taste-primary-color, $delight-of-taste-third-color);
-          font-size: 1.2em;
+          font-size: map-get($font-size-delight-of-taste, h2-delight-of-taste);
+          padding: 0.25rem;
           font-weight: normal;
           margin: 0 0 0.5em 0;
         }
         h3{
           @include menus-font;
           color: $delight-of-taste-secondary-color;
-          font-size: 2em;
+          font-size: map-get($font-size-delight-of-taste, h3-delight-of-taste);
           font-weight: normal;
           margin: 0;
         }
       }
-      &.palette-of-taste{
-        .palette-of-taste-content{
+      &.menus-prev__palette-of-taste{
+        .palette-of-taste__content{
           @include menu-hover;
         }
         margin-top: 40px;
@@ -101,21 +105,22 @@
         h2{
           @include palette-of-taste-font;
           @include linear-gradient($palette-of-taste-primary-color, $palette-of-taste-secondary-color);
-          font-size: 1.2em;
+          font-size: map-get($font-size-palette-of-taste, h2-palette-of-taste);
           font-weight: normal;
+          padding: 0.3rem;
           margin: 0 0 0.5em 0;
         }
         h3{
           @include menus-font;
           color: lighten($palette-of-taste-primary-color, 15%);
-          font-size: 2em;
+          font-size: map-get($font-size-palette-of-taste, h3-palette-of-taste);
           font-weight: normal;
           margin: 0;
         }
       }
     }
   }
-  button{
+  .menus-prev__button{
     height: 60px;
     width: 350px;
     cursor: pointer;
@@ -124,7 +129,7 @@
     border-radius: 10px;
     background-color: $header-color;
     color: $font-color;
-    font-size: 2.3em;
+    font-size: map-get($font-size-general, menus-prev__button);
     margin-bottom: 50px;
     span{
       animation: dots 0.6s ease-in-out alternate infinite;
@@ -138,12 +143,12 @@
     @media (max-width: map-get($breakpoint, large)){
       height: 50px;
       max-width: 250px;
-      font-size: 1.8em;
+      font-size: map-get($font-size-general, menus-prev__button--large);
     }
     @media (max-width: map-get($breakpoint, x-small)){
       height: 40px;
       max-width: 200px;
-      font-size: 1.3em;
+      font-size: map-get($font-size-general, menus-prev__button--x-small);
     }
   }
 }

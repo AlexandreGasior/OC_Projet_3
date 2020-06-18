@@ -1,5 +1,6 @@
 /* COLORS */
 /* BREAKPOINT */
+/* FONT-SIZE */
 /* FONTS */
 /* TEXT LINEAR GRADIENT */
 /* EACH MENU PRESENTATION INDEX */
@@ -94,7 +95,7 @@ header {
 }
 header h1 {
   display: inline-block;
-  font-size: 3.5em;
+  font-size: 3.5rem;
   font-weight: 600;
   color: #FDCB46;
   margin: 35px 0;
@@ -113,7 +114,7 @@ footer {
 footer .footer__link {
   margin: 25px 15px;
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   text-transform: capitalize;
   color: #FDCB46;
 }
@@ -122,23 +123,23 @@ footer .footer__link:hover {
 }
 @media (max-width: 992px) {
   footer .footer__link {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 400px) {
   footer .footer__link {
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
 }
 
 /* INDEX */
-.menus-panel {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 65px;
 }
-.menus-panel .menus {
+.container .menus-prev {
   width: 75%;
   padding: 50px;
   display: flex;
@@ -146,12 +147,12 @@ footer .footer__link:hover {
   justify-content: space-around;
 }
 @media (max-width: 992px) {
-  .menus-panel .menus {
+  .container .menus-prev {
     width: 90%;
     padding: 50px 0;
   }
 }
-.menus-panel .menus section {
+.container .menus-prev section {
   display: inline-block;
   width: 35%;
   height: 300px;
@@ -159,91 +160,96 @@ footer .footer__link:hover {
   cursor: pointer;
 }
 @media (max-width: 576px) {
-  .menus-panel .menus section {
+  .container .menus-prev section {
     width: 80%;
   }
 }
-.menus-panel .menus section.enchanted-note {
+.container .menus-prev section.menus-prev__enchanted-note {
   background-color: #FCDFDB;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.menus-panel .menus section.enchanted-note .enchanted-note-content {
+.container .menus-prev section.menus-prev__enchanted-note .enchanted-note__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: menu-hover-reverse 300ms ease-in-out;
+  animation: menu-hover-reverse 150ms ease-in-out;
 }
-.menus-panel .menus section.enchanted-note .enchanted-note-content:hover {
+.container .menus-prev section.menus-prev__enchanted-note .enchanted-note__content:hover {
   animation: menu-hover 300ms ease-in-out forwards;
 }
-.menus-panel .menus section.enchanted-note i {
-  font-size: 2.5em;
+.container .menus-prev section.menus-prev__enchanted-note i {
+  font-size: 2.5rem;
   background: -webkit-linear-gradient(315deg, #EF475F, #F6916A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menus-panel .menus section.enchanted-note h2 {
+.container .menus-prev section.menus-prev__enchanted-note h2 {
   font-family: "Devonshire", cursive;
   color: #3D1319;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: normal;
   margin: 0 0 0.5em 0;
 }
-.menus-panel .menus section.enchanted-note h3 {
+.container .menus-prev section.menus-prev__enchanted-note h3 {
   font-family: "Sriracha", cursive;
   color: #3D1319;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 100;
   text-transform: uppercase;
   margin: 0;
 }
-.menus-panel .menus section.french-chic {
+.container .menus-prev section.menus-prev__french-chic {
   background-color: #FFF5FE;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.menus-panel .menus section.french-chic .french-chic-content {
+.container .menus-prev section.menus-prev__french-chic .french-chic__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: menu-hover-reverse 300ms ease-in-out;
+  animation: menu-hover-reverse 150ms ease-in-out;
 }
-.menus-panel .menus section.french-chic .french-chic-content:hover {
+.container .menus-prev section.menus-prev__french-chic .french-chic__content:hover {
   animation: menu-hover 300ms ease-in-out forwards;
 }
 @media (max-width: 576px) {
-  .menus-panel .menus section.french-chic {
+  .container .menus-prev section.menus-prev__french-chic {
     margin-top: 40px;
   }
 }
-.menus-panel .menus section.french-chic h2 {
+.container .menus-prev section.menus-prev__french-chic h2 {
   font-family: "Croissant One", cursive;
   background: -webkit-linear-gradient(315deg, #C67412, #6E4CCC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: normal;
   margin: 0 0 0.5em 0;
 }
-.menus-panel .menus section.french-chic h3 {
+@media (max-width: 992px) {
+  .container .menus-prev section.menus-prev__french-chic h2 {
+    font-size: 0.8rem;
+  }
+}
+.container .menus-prev section.menus-prev__french-chic h3 {
   font-family: "Noto Serif", serif;
   color: #C67412;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
 }
-.menus-panel .menus section.delight-of-taste {
+.container .menus-prev section.menus-prev__delight-of-taste {
   margin-top: 40px;
   background-color: #F9F9F9;
   display: flex;
@@ -251,35 +257,36 @@ footer .footer__link:hover {
   justify-content: center;
   align-items: center;
 }
-.menus-panel .menus section.delight-of-taste .delight-of-taste-content {
+.container .menus-prev section.menus-prev__delight-of-taste .delight-of-taste__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: menu-hover-reverse 300ms ease-in-out;
+  animation: menu-hover-reverse 150ms ease-in-out;
 }
-.menus-panel .menus section.delight-of-taste .delight-of-taste-content:hover {
+.container .menus-prev section.menus-prev__delight-of-taste .delight-of-taste__content:hover {
   animation: menu-hover 300ms ease-in-out forwards;
 }
-.menus-panel .menus section.delight-of-taste h2 {
+.container .menus-prev section.menus-prev__delight-of-taste h2 {
   font-family: "Dancing Script", cursive;
   background: -webkit-linear-gradient(315deg, #0228DD, #229DF9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.2em;
+  font-size: 1.2rem;
+  padding: 0.25rem;
   font-weight: normal;
   margin: 0 0 0.5em 0;
 }
-.menus-panel .menus section.delight-of-taste h3 {
+.container .menus-prev section.menus-prev__delight-of-taste h3 {
   font-family: "Caveat", cursive;
   color: #0670F3;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: normal;
   margin: 0;
 }
-.menus-panel .menus section.palette-of-taste {
+.container .menus-prev section.menus-prev__palette-of-taste {
   margin-top: 40px;
   background-color: #FDFFFD;
   display: flex;
@@ -287,35 +294,36 @@ footer .footer__link:hover {
   justify-content: center;
   align-items: center;
 }
-.menus-panel .menus section.palette-of-taste .palette-of-taste-content {
+.container .menus-prev section.menus-prev__palette-of-taste .palette-of-taste__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: menu-hover-reverse 300ms ease-in-out;
+  animation: menu-hover-reverse 150ms ease-in-out;
 }
-.menus-panel .menus section.palette-of-taste .palette-of-taste-content:hover {
+.container .menus-prev section.menus-prev__palette-of-taste .palette-of-taste__content:hover {
   animation: menu-hover 300ms ease-in-out forwards;
 }
-.menus-panel .menus section.palette-of-taste h2 {
+.container .menus-prev section.menus-prev__palette-of-taste h2 {
   font-family: "Kaushan Script", cursive;
   background: -webkit-linear-gradient(315deg, #3D923A, #BEFF7F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: normal;
+  padding: 0.3rem;
   margin: 0 0 0.5em 0;
 }
-.menus-panel .menus section.palette-of-taste h3 {
+.container .menus-prev section.menus-prev__palette-of-taste h3 {
   font-family: "Caveat", cursive;
   color: #5ebe5b;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: normal;
   margin: 0;
 }
-.menus-panel button {
+.container .menus-prev__button {
   height: 60px;
   width: 350px;
   cursor: pointer;
@@ -324,30 +332,30 @@ footer .footer__link:hover {
   border-radius: 10px;
   background-color: #579C87;
   color: #FDCB46;
-  font-size: 2.3em;
+  font-size: 2.3rem;
   margin-bottom: 50px;
 }
-.menus-panel button span {
+.container .menus-prev__button span {
   animation: dots 0.6s ease-in-out alternate infinite;
 }
-.menus-panel button span:nth-child(2) {
+.container .menus-prev__button span:nth-child(2) {
   animation-delay: 0.2s;
 }
-.menus-panel button span:nth-child(3) {
+.container .menus-prev__button span:nth-child(3) {
   animation-delay: 0.4s;
 }
 @media (max-width: 992px) {
-  .menus-panel button {
+  .container .menus-prev__button {
     height: 50px;
     max-width: 250px;
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 400px) {
-  .menus-panel button {
+  .container .menus-prev__button {
     height: 40px;
     max-width: 200px;
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
 }
 
@@ -359,117 +367,124 @@ footer .footer__link:hover {
   margin-bottom: 100px;
 }
 #enchanted-note h2 {
-  font-size: 45px;
+  font-size: 3rem;
+  text-align: center;
   margin-bottom: 20px;
 }
-#enchanted-note h2.heading {
+#enchanted-note h2.palette-of-taste__heading {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-#enchanted-note .enchanted-note-menu {
+#enchanted-note .enchanted-note__menu {
+  font-family: "Caveat", cursive;
   width: 75%;
   background-color: #FCDFDB;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
-  font-family: "Caveat", cursive;
   color: #3D1319;
   padding: 65px 0;
 }
 @media (max-width: 992px) {
-  #enchanted-note .enchanted-note-menu {
+  #enchanted-note .enchanted-note__menu {
     width: 90%;
   }
 }
-#enchanted-note .enchanted-note-menu i {
+#enchanted-note .enchanted-note__menu i {
   margin-top: 60px;
-  font-size: 70px;
+  font-size: 5rem;
   background: -webkit-linear-gradient(315deg, #EF475F, #F6916A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#enchanted-note .enchanted-note-menu h2 {
+#enchanted-note .enchanted-note__menu h2 {
+  font-size: 4rem;
   margin-top: 10px;
-  font-size: 55px;
   font-weight: bold;
+  text-align: center;
   font-family: "Devonshire", cursive;
 }
-#enchanted-note .enchanted-note-menu section {
+@media (max-width: 576px) {
+  #enchanted-note .enchanted-note__menu h2 {
+    font-size: 3rem;
+  }
+}
+#enchanted-note .enchanted-note__menu section {
   width: 80%;
 }
-#enchanted-note .enchanted-note-menu section h3 {
-  font-size: 35px;
+#enchanted-note .enchanted-note__menu section h3 {
+  font-size: 2rem;
   text-align: center;
   margin: 0;
 }
-#enchanted-note .enchanted-note-menu section.entree {
+#enchanted-note .enchanted-note__menu section.menu__entree {
   margin-top: 100px;
 }
-#enchanted-note .enchanted-note-menu section.meal {
+#enchanted-note .enchanted-note__menu section.menu__meal {
   margin-top: 75px;
 }
-#enchanted-note .enchanted-note-menu section.dessert {
+#enchanted-note .enchanted-note__menu section.menu__dessert {
   margin: 75px 0;
 }
-#enchanted-note .enchanted-note-menu section .menu-section-heading {
+#enchanted-note .enchanted-note__menu section.menu__dessert p {
+  width: 100%;
+}
+#enchanted-note .enchanted-note__menu section .entree__heading, #enchanted-note .enchanted-note__menu section .meal__heading, #enchanted-note .enchanted-note__menu section .dessert__heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 576px) {
-  #enchanted-note .enchanted-note-menu section .menu-section-heading {
+  #enchanted-note .enchanted-note__menu section .entree__heading, #enchanted-note .enchanted-note__menu section .meal__heading, #enchanted-note .enchanted-note__menu section .dessert__heading {
     flex-direction: column;
   }
 }
-#enchanted-note .enchanted-note-menu section .menu-section-heading .before-heading-title, #enchanted-note .enchanted-note-menu section .menu-section-heading .after-heading-title {
+#enchanted-note .enchanted-note__menu section .entree__heading .before-heading-title, #enchanted-note .enchanted-note__menu section .entree__heading .after-heading-title, #enchanted-note .enchanted-note__menu section .meal__heading .before-heading-title, #enchanted-note .enchanted-note__menu section .meal__heading .after-heading-title, #enchanted-note .enchanted-note__menu section .dessert__heading .before-heading-title, #enchanted-note .enchanted-note__menu section .dessert__heading .after-heading-title {
   width: 30%;
 }
-#enchanted-note .enchanted-note-menu section .menu-section-heading .before-heading-title img, #enchanted-note .enchanted-note-menu section .menu-section-heading .after-heading-title img {
+#enchanted-note .enchanted-note__menu section .entree__heading .before-heading-title img, #enchanted-note .enchanted-note__menu section .entree__heading .after-heading-title img, #enchanted-note .enchanted-note__menu section .meal__heading .before-heading-title img, #enchanted-note .enchanted-note__menu section .meal__heading .after-heading-title img, #enchanted-note .enchanted-note__menu section .dessert__heading .before-heading-title img, #enchanted-note .enchanted-note__menu section .dessert__heading .after-heading-title img {
   max-width: 100%;
 }
 @media (max-width: 576px) {
-  #enchanted-note .enchanted-note-menu section .menu-section-heading .before-heading-title, #enchanted-note .enchanted-note-menu section .menu-section-heading .after-heading-title {
+  #enchanted-note .enchanted-note__menu section .entree__heading .before-heading-title, #enchanted-note .enchanted-note__menu section .entree__heading .after-heading-title, #enchanted-note .enchanted-note__menu section .meal__heading .before-heading-title, #enchanted-note .enchanted-note__menu section .meal__heading .after-heading-title, #enchanted-note .enchanted-note__menu section .dessert__heading .before-heading-title, #enchanted-note .enchanted-note__menu section .dessert__heading .after-heading-title {
     width: auto;
   }
 }
-#enchanted-note .enchanted-note-menu section .menu-section-heading .after-heading-title {
+#enchanted-note .enchanted-note__menu section .entree__heading .after-heading-title, #enchanted-note .enchanted-note__menu section .meal__heading .after-heading-title, #enchanted-note .enchanted-note__menu section .dessert__heading .after-heading-title {
   text-align: right;
 }
-#enchanted-note .enchanted-note-menu section .menu-section-heading .heading-title hr.entree {
+#enchanted-note .enchanted-note__menu section .entree__heading .heading-title hr.entree, #enchanted-note .enchanted-note__menu section .meal__heading .heading-title hr.entree, #enchanted-note .enchanted-note__menu section .dessert__heading .heading-title hr.entree {
   border: 1px solid #3D1319;
 }
-#enchanted-note .enchanted-note-menu section .menu-section-heading .heading-title hr.meal {
+#enchanted-note .enchanted-note__menu section .entree__heading .heading-title hr.meal, #enchanted-note .enchanted-note__menu section .meal__heading .heading-title hr.meal, #enchanted-note .enchanted-note__menu section .dessert__heading .heading-title hr.meal {
   border: 1px solid #3D1319;
 }
-#enchanted-note .enchanted-note-menu section .menu-section-heading .heading-title hr.dessert {
+#enchanted-note .enchanted-note__menu section .entree__heading .heading-title hr.dessert, #enchanted-note .enchanted-note__menu section .meal__heading .heading-title hr.dessert, #enchanted-note .enchanted-note__menu section .dessert__heading .heading-title hr.dessert {
   border: 1px solid #3D1319;
 }
-#enchanted-note .enchanted-note-menu section .heading-title:hover hr {
+#enchanted-note .enchanted-note__menu section .heading-title:hover hr {
   animation: underline-animation 2s;
 }
-#enchanted-note .enchanted-note-menu section p {
+#enchanted-note .enchanted-note__menu section p {
   display: inline-block;
   margin: 10px 0;
-  font-size: 24px;
+  font-size: 1.3rem;
   width: 85%;
 }
-#enchanted-note .enchanted-note-menu section p.price {
-  font-size: 26px;
+#enchanted-note .enchanted-note__menu section p.price {
+  font-size: 1.4rem;
   font-weight: bold;
   width: 10%;
   text-align: right;
   vertical-align: top;
 }
-#enchanted-note .enchanted-note-menu section.dessert p {
-  width: 100%;
-}
-#enchanted-note .enchanted-note-menu h4 {
+#enchanted-note .enchanted-note__menu h4 {
   font-family: "Devonshire", cursive;
-  font-size: 47px;
+  font-size: 3rem;
 }
-#enchanted-note .enchanted-note-menu h4 i {
-  font-size: 62px;
+#enchanted-note .enchanted-note__menu h4 i {
+  font-size: 3rem;
 }
 
 /*FRENCH-CHIC*/
@@ -480,172 +495,180 @@ footer .footer__link:hover {
   margin-bottom: 100px;
 }
 #french-chic h2 {
-  font-size: 55px;
+  font-size: 3rem;
+  text-align: center;
   margin-bottom: 20px;
 }
-#french-chic h2.heading {
+#french-chic h2.palette-of-taste__heading {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-#french-chic .french-chic-menu {
+#french-chic .french-chic__menu {
+  font-family: "Noto Serif", serif;
   width: 75%;
   background-color: #FFF5FE;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
-  font-family: "Noto Serif", serif;
+  color: black;
   padding: 65px 0;
 }
 @media (max-width: 992px) {
-  #french-chic .french-chic-menu {
+  #french-chic .french-chic__menu {
     width: 90%;
   }
 }
-#french-chic .french-chic-menu h2 {
+#french-chic .french-chic__menu h2 {
+  font-size: 4rem;
   margin-top: 60px;
-  font-size: 45px;
-  font-family: "Croissant One", cursive;
   font-weight: bold;
+  text-align: center;
+  font-family: "Croissant One", cursive;
   background: -webkit-linear-gradient(315deg, #C67412, #6E4CCC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#french-chic .french-chic-menu section {
+@media (max-width: 576px) {
+  #french-chic .french-chic__menu h2 {
+    font-size: 3rem;
+  }
+}
+#french-chic .french-chic__menu section {
   width: 80%;
 }
-#french-chic .french-chic-menu section h3 {
-  font-size: 35px;
+#french-chic .french-chic__menu section h3 {
+  font-size: 2rem;
   text-align: center;
   margin: 0;
 }
-#french-chic .french-chic-menu section.entree {
+#french-chic .french-chic__menu section.menu__entree {
   margin-top: 100px;
   color: #C67412;
 }
-#french-chic .french-chic-menu section.entree .menu-section-heading {
+#french-chic .french-chic__menu section.menu__entree .entree__heading, #french-chic .french-chic__menu section.menu__entree .meal__heading, #french-chic .french-chic__menu section.menu__entree .dessert__heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 576px) {
-  #french-chic .french-chic-menu section.entree .menu-section-heading {
+  #french-chic .french-chic__menu section.menu__entree .entree__heading, #french-chic .french-chic__menu section.menu__entree .meal__heading, #french-chic .french-chic__menu section.menu__entree .dessert__heading {
     flex-direction: column;
   }
 }
-#french-chic .french-chic-menu section.entree .menu-section-heading .before-heading-title, #french-chic .french-chic-menu section.entree .menu-section-heading .after-heading-title {
+#french-chic .french-chic__menu section.menu__entree .entree__heading .before-heading-title, #french-chic .french-chic__menu section.menu__entree .entree__heading .after-heading-title, #french-chic .french-chic__menu section.menu__entree .meal__heading .before-heading-title, #french-chic .french-chic__menu section.menu__entree .meal__heading .after-heading-title, #french-chic .french-chic__menu section.menu__entree .dessert__heading .before-heading-title, #french-chic .french-chic__menu section.menu__entree .dessert__heading .after-heading-title {
   width: 30%;
 }
-#french-chic .french-chic-menu section.entree .menu-section-heading .before-heading-title img, #french-chic .french-chic-menu section.entree .menu-section-heading .after-heading-title img {
+#french-chic .french-chic__menu section.menu__entree .entree__heading .before-heading-title img, #french-chic .french-chic__menu section.menu__entree .entree__heading .after-heading-title img, #french-chic .french-chic__menu section.menu__entree .meal__heading .before-heading-title img, #french-chic .french-chic__menu section.menu__entree .meal__heading .after-heading-title img, #french-chic .french-chic__menu section.menu__entree .dessert__heading .before-heading-title img, #french-chic .french-chic__menu section.menu__entree .dessert__heading .after-heading-title img {
   max-width: 100%;
 }
 @media (max-width: 576px) {
-  #french-chic .french-chic-menu section.entree .menu-section-heading .before-heading-title, #french-chic .french-chic-menu section.entree .menu-section-heading .after-heading-title {
+  #french-chic .french-chic__menu section.menu__entree .entree__heading .before-heading-title, #french-chic .french-chic__menu section.menu__entree .entree__heading .after-heading-title, #french-chic .french-chic__menu section.menu__entree .meal__heading .before-heading-title, #french-chic .french-chic__menu section.menu__entree .meal__heading .after-heading-title, #french-chic .french-chic__menu section.menu__entree .dessert__heading .before-heading-title, #french-chic .french-chic__menu section.menu__entree .dessert__heading .after-heading-title {
     width: auto;
   }
 }
-#french-chic .french-chic-menu section.entree .menu-section-heading .after-heading-title {
+#french-chic .french-chic__menu section.menu__entree .entree__heading .after-heading-title, #french-chic .french-chic__menu section.menu__entree .meal__heading .after-heading-title, #french-chic .french-chic__menu section.menu__entree .dessert__heading .after-heading-title {
   text-align: right;
 }
-#french-chic .french-chic-menu section.entree .menu-section-heading .heading-title hr.entree {
+#french-chic .french-chic__menu section.menu__entree .entree__heading .heading-title hr.entree, #french-chic .french-chic__menu section.menu__entree .meal__heading .heading-title hr.entree, #french-chic .french-chic__menu section.menu__entree .dessert__heading .heading-title hr.entree {
   border: 1px solid #C67412;
 }
-#french-chic .french-chic-menu section.entree .menu-section-heading .heading-title hr.meal {
+#french-chic .french-chic__menu section.menu__entree .entree__heading .heading-title hr.meal, #french-chic .french-chic__menu section.menu__entree .meal__heading .heading-title hr.meal, #french-chic .french-chic__menu section.menu__entree .dessert__heading .heading-title hr.meal {
   border: 1px solid #C67412;
 }
-#french-chic .french-chic-menu section.entree .menu-section-heading .heading-title hr.dessert {
+#french-chic .french-chic__menu section.menu__entree .entree__heading .heading-title hr.dessert, #french-chic .french-chic__menu section.menu__entree .meal__heading .heading-title hr.dessert, #french-chic .french-chic__menu section.menu__entree .dessert__heading .heading-title hr.dessert {
   border: 1px solid #C67412;
 }
-#french-chic .french-chic-menu section.meal {
+#french-chic .french-chic__menu section.menu__meal {
   margin-top: 75px;
   color: #A56799;
 }
-#french-chic .french-chic-menu section.meal .menu-section-heading {
+#french-chic .french-chic__menu section.menu__meal .entree__heading, #french-chic .french-chic__menu section.menu__meal .meal__heading, #french-chic .french-chic__menu section.menu__meal .dessert__heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 576px) {
-  #french-chic .french-chic-menu section.meal .menu-section-heading {
+  #french-chic .french-chic__menu section.menu__meal .entree__heading, #french-chic .french-chic__menu section.menu__meal .meal__heading, #french-chic .french-chic__menu section.menu__meal .dessert__heading {
     flex-direction: column;
   }
 }
-#french-chic .french-chic-menu section.meal .menu-section-heading .before-heading-title, #french-chic .french-chic-menu section.meal .menu-section-heading .after-heading-title {
+#french-chic .french-chic__menu section.menu__meal .entree__heading .before-heading-title, #french-chic .french-chic__menu section.menu__meal .entree__heading .after-heading-title, #french-chic .french-chic__menu section.menu__meal .meal__heading .before-heading-title, #french-chic .french-chic__menu section.menu__meal .meal__heading .after-heading-title, #french-chic .french-chic__menu section.menu__meal .dessert__heading .before-heading-title, #french-chic .french-chic__menu section.menu__meal .dessert__heading .after-heading-title {
   width: 30%;
 }
-#french-chic .french-chic-menu section.meal .menu-section-heading .before-heading-title img, #french-chic .french-chic-menu section.meal .menu-section-heading .after-heading-title img {
+#french-chic .french-chic__menu section.menu__meal .entree__heading .before-heading-title img, #french-chic .french-chic__menu section.menu__meal .entree__heading .after-heading-title img, #french-chic .french-chic__menu section.menu__meal .meal__heading .before-heading-title img, #french-chic .french-chic__menu section.menu__meal .meal__heading .after-heading-title img, #french-chic .french-chic__menu section.menu__meal .dessert__heading .before-heading-title img, #french-chic .french-chic__menu section.menu__meal .dessert__heading .after-heading-title img {
   max-width: 100%;
 }
 @media (max-width: 576px) {
-  #french-chic .french-chic-menu section.meal .menu-section-heading .before-heading-title, #french-chic .french-chic-menu section.meal .menu-section-heading .after-heading-title {
+  #french-chic .french-chic__menu section.menu__meal .entree__heading .before-heading-title, #french-chic .french-chic__menu section.menu__meal .entree__heading .after-heading-title, #french-chic .french-chic__menu section.menu__meal .meal__heading .before-heading-title, #french-chic .french-chic__menu section.menu__meal .meal__heading .after-heading-title, #french-chic .french-chic__menu section.menu__meal .dessert__heading .before-heading-title, #french-chic .french-chic__menu section.menu__meal .dessert__heading .after-heading-title {
     width: auto;
   }
 }
-#french-chic .french-chic-menu section.meal .menu-section-heading .after-heading-title {
+#french-chic .french-chic__menu section.menu__meal .entree__heading .after-heading-title, #french-chic .french-chic__menu section.menu__meal .meal__heading .after-heading-title, #french-chic .french-chic__menu section.menu__meal .dessert__heading .after-heading-title {
   text-align: right;
 }
-#french-chic .french-chic-menu section.meal .menu-section-heading .heading-title hr.entree {
+#french-chic .french-chic__menu section.menu__meal .entree__heading .heading-title hr.entree, #french-chic .french-chic__menu section.menu__meal .meal__heading .heading-title hr.entree, #french-chic .french-chic__menu section.menu__meal .dessert__heading .heading-title hr.entree {
   border: 1px solid #A56799;
 }
-#french-chic .french-chic-menu section.meal .menu-section-heading .heading-title hr.meal {
+#french-chic .french-chic__menu section.menu__meal .entree__heading .heading-title hr.meal, #french-chic .french-chic__menu section.menu__meal .meal__heading .heading-title hr.meal, #french-chic .french-chic__menu section.menu__meal .dessert__heading .heading-title hr.meal {
   border: 1px solid #A56799;
 }
-#french-chic .french-chic-menu section.meal .menu-section-heading .heading-title hr.dessert {
+#french-chic .french-chic__menu section.menu__meal .entree__heading .heading-title hr.dessert, #french-chic .french-chic__menu section.menu__meal .meal__heading .heading-title hr.dessert, #french-chic .french-chic__menu section.menu__meal .dessert__heading .heading-title hr.dessert {
   border: 1px solid #A56799;
 }
-#french-chic .french-chic-menu section.dessert {
+#french-chic .french-chic__menu section.menu__dessert {
   margin: 75px 0;
   color: #6E4CCC;
 }
-#french-chic .french-chic-menu section.dessert .menu-section-heading {
+#french-chic .french-chic__menu section.menu__dessert .entree__heading, #french-chic .french-chic__menu section.menu__dessert .meal__heading, #french-chic .french-chic__menu section.menu__dessert .dessert__heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 576px) {
-  #french-chic .french-chic-menu section.dessert .menu-section-heading {
+  #french-chic .french-chic__menu section.menu__dessert .entree__heading, #french-chic .french-chic__menu section.menu__dessert .meal__heading, #french-chic .french-chic__menu section.menu__dessert .dessert__heading {
     flex-direction: column;
   }
 }
-#french-chic .french-chic-menu section.dessert .menu-section-heading .before-heading-title, #french-chic .french-chic-menu section.dessert .menu-section-heading .after-heading-title {
+#french-chic .french-chic__menu section.menu__dessert .entree__heading .before-heading-title, #french-chic .french-chic__menu section.menu__dessert .entree__heading .after-heading-title, #french-chic .french-chic__menu section.menu__dessert .meal__heading .before-heading-title, #french-chic .french-chic__menu section.menu__dessert .meal__heading .after-heading-title, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .before-heading-title, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .after-heading-title {
   width: 30%;
 }
-#french-chic .french-chic-menu section.dessert .menu-section-heading .before-heading-title img, #french-chic .french-chic-menu section.dessert .menu-section-heading .after-heading-title img {
+#french-chic .french-chic__menu section.menu__dessert .entree__heading .before-heading-title img, #french-chic .french-chic__menu section.menu__dessert .entree__heading .after-heading-title img, #french-chic .french-chic__menu section.menu__dessert .meal__heading .before-heading-title img, #french-chic .french-chic__menu section.menu__dessert .meal__heading .after-heading-title img, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .before-heading-title img, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .after-heading-title img {
   max-width: 100%;
 }
 @media (max-width: 576px) {
-  #french-chic .french-chic-menu section.dessert .menu-section-heading .before-heading-title, #french-chic .french-chic-menu section.dessert .menu-section-heading .after-heading-title {
+  #french-chic .french-chic__menu section.menu__dessert .entree__heading .before-heading-title, #french-chic .french-chic__menu section.menu__dessert .entree__heading .after-heading-title, #french-chic .french-chic__menu section.menu__dessert .meal__heading .before-heading-title, #french-chic .french-chic__menu section.menu__dessert .meal__heading .after-heading-title, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .before-heading-title, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .after-heading-title {
     width: auto;
   }
 }
-#french-chic .french-chic-menu section.dessert .menu-section-heading .after-heading-title {
+#french-chic .french-chic__menu section.menu__dessert .entree__heading .after-heading-title, #french-chic .french-chic__menu section.menu__dessert .meal__heading .after-heading-title, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .after-heading-title {
   text-align: right;
 }
-#french-chic .french-chic-menu section.dessert .menu-section-heading .heading-title hr.entree {
+#french-chic .french-chic__menu section.menu__dessert .entree__heading .heading-title hr.entree, #french-chic .french-chic__menu section.menu__dessert .meal__heading .heading-title hr.entree, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .heading-title hr.entree {
   border: 1px solid #6E4CCC;
 }
-#french-chic .french-chic-menu section.dessert .menu-section-heading .heading-title hr.meal {
+#french-chic .french-chic__menu section.menu__dessert .entree__heading .heading-title hr.meal, #french-chic .french-chic__menu section.menu__dessert .meal__heading .heading-title hr.meal, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .heading-title hr.meal {
   border: 1px solid #6E4CCC;
 }
-#french-chic .french-chic-menu section.dessert .menu-section-heading .heading-title hr.dessert {
+#french-chic .french-chic__menu section.menu__dessert .entree__heading .heading-title hr.dessert, #french-chic .french-chic__menu section.menu__dessert .meal__heading .heading-title hr.dessert, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .heading-title hr.dessert {
   border: 1px solid #6E4CCC;
 }
-#french-chic .french-chic-menu section p {
+#french-chic .french-chic__menu section.menu__dessert p {
+  width: 100%;
+}
+#french-chic .french-chic__menu section p {
   display: inline-block;
   margin: 10px 0;
-  font-size: 24px;
+  font-size: 1.3rem;
   width: 85%;
 }
-#french-chic .french-chic-menu section p.price {
+#french-chic .french-chic__menu section p.price {
   width: 10%;
-  font-size: 26px;
+  font-size: 1.4rem;
   text-align: right;
   vertical-align: top;
-}
-#french-chic .french-chic-menu section.dessert p {
-  width: 100%;
 }
 
 /*DELIGHT-OF-TASTE*/
@@ -656,97 +679,106 @@ footer .footer__link:hover {
   margin-bottom: 100px;
 }
 #delight-of-taste h2 {
-  font-size: 45px;
+  font-size: 3rem;
+  text-align: center;
   margin-bottom: 20px;
 }
-#delight-of-taste h2.heading {
+#delight-of-taste h2.palette-of-taste__heading {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-#delight-of-taste .delight-of-taste-menu {
+#delight-of-taste .delight-of-taste__menu {
+  font-family: "Caveat", cursive;
   width: 75%;
   background-color: #F9F9F9;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
-  font-family: "Caveat", cursive;
+  color: black;
   padding: 65px 0;
 }
 @media (max-width: 992px) {
-  #delight-of-taste .delight-of-taste-menu {
+  #delight-of-taste .delight-of-taste__menu {
     width: 90%;
   }
 }
-#delight-of-taste .delight-of-taste-menu h2 {
+#delight-of-taste .delight-of-taste__menu h2 {
+  font-size: 4.5rem;
   margin-top: 60px;
-  font-size: 75px;
   font-weight: bold;
+  text-align: center;
+  padding: 0.3rem;
   font-family: "Dancing Script", cursive;
   background: -webkit-linear-gradient(315deg, #0228DD, #229DF9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#delight-of-taste .delight-of-taste-menu section {
+@media (max-width: 576px) {
+  #delight-of-taste .delight-of-taste__menu h2 {
+    font-size: 3.5rem;
+  }
+}
+#delight-of-taste .delight-of-taste__menu section {
   width: 80%;
 }
-#delight-of-taste .delight-of-taste-menu section h3 {
-  font-size: 35px;
+#delight-of-taste .delight-of-taste__menu section h3 {
+  font-size: 2rem;
   font-weight: normal;
   text-align: center;
   margin: 0;
 }
-#delight-of-taste .delight-of-taste-menu section.entree {
+#delight-of-taste .delight-of-taste__menu section.menu__entree {
   margin-top: 100px;
 }
-#delight-of-taste .delight-of-taste-menu section.meal {
+#delight-of-taste .delight-of-taste__menu section.menu__meal {
   margin-top: 75px;
 }
-#delight-of-taste .delight-of-taste-menu section.dessert {
+#delight-of-taste .delight-of-taste__menu section.menu__dessert {
   margin: 75px 0;
 }
-#delight-of-taste .delight-of-taste-menu section .menu-section-heading {
+#delight-of-taste .delight-of-taste__menu section .entree__heading, #delight-of-taste .delight-of-taste__menu section .meal__heading, #delight-of-taste .delight-of-taste__menu section .dessert__heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 576px) {
-  #delight-of-taste .delight-of-taste-menu section .menu-section-heading {
+  #delight-of-taste .delight-of-taste__menu section .entree__heading, #delight-of-taste .delight-of-taste__menu section .meal__heading, #delight-of-taste .delight-of-taste__menu section .dessert__heading {
     flex-direction: column;
   }
 }
-#delight-of-taste .delight-of-taste-menu section .menu-section-heading .before-heading-title, #delight-of-taste .delight-of-taste-menu section .menu-section-heading .after-heading-title {
+#delight-of-taste .delight-of-taste__menu section .entree__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section .meal__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section .dessert__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section .dessert__heading .after-heading-title {
   width: 30%;
 }
-#delight-of-taste .delight-of-taste-menu section .menu-section-heading .before-heading-title img, #delight-of-taste .delight-of-taste-menu section .menu-section-heading .after-heading-title img {
+#delight-of-taste .delight-of-taste__menu section .entree__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section .entree__heading .after-heading-title img, #delight-of-taste .delight-of-taste__menu section .meal__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section .meal__heading .after-heading-title img, #delight-of-taste .delight-of-taste__menu section .dessert__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section .dessert__heading .after-heading-title img {
   max-width: 100%;
 }
 @media (max-width: 576px) {
-  #delight-of-taste .delight-of-taste-menu section .menu-section-heading .before-heading-title, #delight-of-taste .delight-of-taste-menu section .menu-section-heading .after-heading-title {
+  #delight-of-taste .delight-of-taste__menu section .entree__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section .meal__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section .dessert__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section .dessert__heading .after-heading-title {
     width: auto;
   }
 }
-#delight-of-taste .delight-of-taste-menu section .menu-section-heading .after-heading-title {
+#delight-of-taste .delight-of-taste__menu section .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section .dessert__heading .after-heading-title {
   text-align: right;
 }
-#delight-of-taste .delight-of-taste-menu section .menu-section-heading .heading-title hr.entree {
+#delight-of-taste .delight-of-taste__menu section .entree__heading .heading-title hr.entree, #delight-of-taste .delight-of-taste__menu section .meal__heading .heading-title hr.entree, #delight-of-taste .delight-of-taste__menu section .dessert__heading .heading-title hr.entree {
   border: 1px solid #0228DD;
 }
-#delight-of-taste .delight-of-taste-menu section .menu-section-heading .heading-title hr.meal {
+#delight-of-taste .delight-of-taste__menu section .entree__heading .heading-title hr.meal, #delight-of-taste .delight-of-taste__menu section .meal__heading .heading-title hr.meal, #delight-of-taste .delight-of-taste__menu section .dessert__heading .heading-title hr.meal {
   border: 1px solid #0670F3;
 }
-#delight-of-taste .delight-of-taste-menu section .menu-section-heading .heading-title hr.dessert {
+#delight-of-taste .delight-of-taste__menu section .entree__heading .heading-title hr.dessert, #delight-of-taste .delight-of-taste__menu section .meal__heading .heading-title hr.dessert, #delight-of-taste .delight-of-taste__menu section .dessert__heading .heading-title hr.dessert {
   border: 1px solid #229DF9;
 }
-#delight-of-taste .delight-of-taste-menu section p {
+#delight-of-taste .delight-of-taste__menu section p {
   display: inline-block;
   margin: 10px 0;
-  font-size: 24px;
+  font-size: 1.3rem;
   width: 85%;
 }
-#delight-of-taste .delight-of-taste-menu section p.price {
+#delight-of-taste .delight-of-taste__menu section p.price {
   width: 10%;
-  font-size: 26px;
+  font-size: 1.4rem;
   font-weight: 600;
   text-align: right;
   vertical-align: top;
@@ -760,96 +792,105 @@ footer .footer__link:hover {
   margin-bottom: 100px;
 }
 #palette-of-taste h2 {
-  font-size: 45px;
+  font-size: 3rem;
+  text-align: center;
   margin-bottom: 20px;
 }
-#palette-of-taste h2.heading {
+#palette-of-taste h2.palette-of-taste__heading {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-#palette-of-taste .palette-of-taste-menu {
+#palette-of-taste .palette-of-taste__menu {
+  font-family: "Caveat", cursive;
   width: 75%;
   background-color: #FDFFFD;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
-  font-family: "Caveat", cursive;
+  color: black;
   padding: 65px 0;
 }
 @media (max-width: 992px) {
-  #palette-of-taste .palette-of-taste-menu {
+  #palette-of-taste .palette-of-taste__menu {
     width: 90%;
   }
 }
-#palette-of-taste .palette-of-taste-menu h2 {
+#palette-of-taste .palette-of-taste__menu h2 {
+  font-size: 4.8rem;
   margin-top: 60px;
-  font-size: 55px;
   font-weight: bold;
+  text-align: center;
+  padding: 0.55rem;
   background: -webkit-linear-gradient(315deg, #3D923A, #BEFF7F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#palette-of-taste .palette-of-taste-menu section {
+@media (max-width: 576px) {
+  #palette-of-taste .palette-of-taste__menu h2 {
+    font-size: 3.8rem;
+  }
+}
+#palette-of-taste .palette-of-taste__menu section {
   width: 80%;
 }
-#palette-of-taste .palette-of-taste-menu section h3 {
-  font-size: 35px;
+#palette-of-taste .palette-of-taste__menu section h3 {
+  font-size: 2rem;
   font-weight: normal;
   text-align: center;
   margin: 0;
 }
-#palette-of-taste .palette-of-taste-menu section.entree {
+#palette-of-taste .palette-of-taste__menu section.menu__entree {
   margin-top: 100px;
 }
-#palette-of-taste .palette-of-taste-menu section.meal {
+#palette-of-taste .palette-of-taste__menu section.menu__meal {
   margin-top: 75px;
 }
-#palette-of-taste .palette-of-taste-menu section.dessert {
+#palette-of-taste .palette-of-taste__menu section.menu__dessert {
   margin: 75px 0;
 }
-#palette-of-taste .palette-of-taste-menu section .menu-section-heading {
+#palette-of-taste .palette-of-taste__menu section .entree__heading, #palette-of-taste .palette-of-taste__menu section .meal__heading, #palette-of-taste .palette-of-taste__menu section .dessert__heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 576px) {
-  #palette-of-taste .palette-of-taste-menu section .menu-section-heading {
+  #palette-of-taste .palette-of-taste__menu section .entree__heading, #palette-of-taste .palette-of-taste__menu section .meal__heading, #palette-of-taste .palette-of-taste__menu section .dessert__heading {
     flex-direction: column;
   }
 }
-#palette-of-taste .palette-of-taste-menu section .menu-section-heading .before-heading-title, #palette-of-taste .palette-of-taste-menu section .menu-section-heading .after-heading-title {
+#palette-of-taste .palette-of-taste__menu section .entree__heading .before-heading-title, #palette-of-taste .palette-of-taste__menu section .entree__heading .after-heading-title, #palette-of-taste .palette-of-taste__menu section .meal__heading .before-heading-title, #palette-of-taste .palette-of-taste__menu section .meal__heading .after-heading-title, #palette-of-taste .palette-of-taste__menu section .dessert__heading .before-heading-title, #palette-of-taste .palette-of-taste__menu section .dessert__heading .after-heading-title {
   width: 30%;
 }
-#palette-of-taste .palette-of-taste-menu section .menu-section-heading .before-heading-title img, #palette-of-taste .palette-of-taste-menu section .menu-section-heading .after-heading-title img {
+#palette-of-taste .palette-of-taste__menu section .entree__heading .before-heading-title img, #palette-of-taste .palette-of-taste__menu section .entree__heading .after-heading-title img, #palette-of-taste .palette-of-taste__menu section .meal__heading .before-heading-title img, #palette-of-taste .palette-of-taste__menu section .meal__heading .after-heading-title img, #palette-of-taste .palette-of-taste__menu section .dessert__heading .before-heading-title img, #palette-of-taste .palette-of-taste__menu section .dessert__heading .after-heading-title img {
   max-width: 100%;
 }
 @media (max-width: 576px) {
-  #palette-of-taste .palette-of-taste-menu section .menu-section-heading .before-heading-title, #palette-of-taste .palette-of-taste-menu section .menu-section-heading .after-heading-title {
+  #palette-of-taste .palette-of-taste__menu section .entree__heading .before-heading-title, #palette-of-taste .palette-of-taste__menu section .entree__heading .after-heading-title, #palette-of-taste .palette-of-taste__menu section .meal__heading .before-heading-title, #palette-of-taste .palette-of-taste__menu section .meal__heading .after-heading-title, #palette-of-taste .palette-of-taste__menu section .dessert__heading .before-heading-title, #palette-of-taste .palette-of-taste__menu section .dessert__heading .after-heading-title {
     width: auto;
   }
 }
-#palette-of-taste .palette-of-taste-menu section .menu-section-heading .after-heading-title {
+#palette-of-taste .palette-of-taste__menu section .entree__heading .after-heading-title, #palette-of-taste .palette-of-taste__menu section .meal__heading .after-heading-title, #palette-of-taste .palette-of-taste__menu section .dessert__heading .after-heading-title {
   text-align: right;
 }
-#palette-of-taste .palette-of-taste-menu section .menu-section-heading .heading-title hr.entree {
-  border: 1px solid #BEFF7F;
+#palette-of-taste .palette-of-taste__menu section .entree__heading .heading-title hr.entree, #palette-of-taste .palette-of-taste__menu section .meal__heading .heading-title hr.entree, #palette-of-taste .palette-of-taste__menu section .dessert__heading .heading-title hr.entree {
+  border: 1px solid #5ebe5b;
 }
-#palette-of-taste .palette-of-taste-menu section .menu-section-heading .heading-title hr.meal {
-  border: 1px solid #BEFF7F;
+#palette-of-taste .palette-of-taste__menu section .entree__heading .heading-title hr.meal, #palette-of-taste .palette-of-taste__menu section .meal__heading .heading-title hr.meal, #palette-of-taste .palette-of-taste__menu section .dessert__heading .heading-title hr.meal {
+  border: 1px solid #5ebe5b;
 }
-#palette-of-taste .palette-of-taste-menu section .menu-section-heading .heading-title hr.dessert {
-  border: 1px solid #BEFF7F;
+#palette-of-taste .palette-of-taste__menu section .entree__heading .heading-title hr.dessert, #palette-of-taste .palette-of-taste__menu section .meal__heading .heading-title hr.dessert, #palette-of-taste .palette-of-taste__menu section .dessert__heading .heading-title hr.dessert {
+  border: 1px solid #5ebe5b;
 }
-#palette-of-taste .palette-of-taste-menu section p {
+#palette-of-taste .palette-of-taste__menu section p {
   display: inline-block;
   margin: 10px 0;
-  font-size: 24px;
+  font-size: 1.3rem;
   width: 85%;
 }
-#palette-of-taste .palette-of-taste-menu section p.price {
+#palette-of-taste .palette-of-taste__menu section p.price {
   width: 10%;
-  font-size: 26px;
+  font-size: 1.4rem;
   font-weight: 600;
   text-align: right;
   vertical-align: top;
@@ -861,7 +902,7 @@ footer .footer__link:hover {
   align-items: center;
 }
 #legal-notice h2 {
-  font-size: 45px;
+  font-size: 3rem;
   margin-bottom: 20px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -873,7 +914,7 @@ footer .footer__link:hover {
 }
 #legal-notice .content p {
   text-align: justify;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

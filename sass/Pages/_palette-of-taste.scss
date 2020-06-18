@@ -1,57 +1,50 @@
 /*PALETTE-OF-TASTE*/
 #palette-of-taste{
-  @include menu-page;
+  @include menu-page-container;
   h2{
-    font-size: 45px;
-    margin-bottom: 20px;
-    &.heading{
-      text-shadow: 0 0 10px rgba(0,0,0,.2);
-    }
+    font-size: map-get($font-size-general, h2-each-page-presentation);
+    @include main-title;
   }
-  .palette-of-taste-menu{
-    width: 75%;
-    background-color: $palette-of-taste-bg;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+  .palette-of-taste__menu{
     @include menus-font;
-    padding: 65px 0;
-    @media (max-width: map-get($breakpoint, large)){
-      width: 90%;
-    }
+    @include each-menu-display($palette-of-taste-bg);
     h2{
+      font-size: map-get($font-size-palette-of-taste, h2-palette-of-taste__menu);
       margin-top: 60px;
-      font-size: 55px;
       font-weight: bold;
+      text-align: center;
+      padding: 0.55rem;
       @include linear-gradient($palette-of-taste-primary-color, $palette-of-taste-secondary-color);
+      @media (max-width: map-get($breakpoint, small)){
+        font-size: map-get($font-size-palette-of-taste, h2-palette-of-taste__menu--small);
+      }
     }
     section{
       width: 80%;
       h3{
-        font-size: 35px;
+        font-size: map-get($font-size-palette-of-taste, h3-palette-of-taste__menu);
         font-weight: normal;
         text-align: center;
         margin: 0;
       }
-      &.entree{
+      &.menu__entree{
         margin-top: 100px;
       }
-      &.meal{
+      &.menu__meal{
         margin-top: 75px;
       }
-      &.dessert{
+      &.menu__dessert{
         margin: 75px 0;
       }
-      @include menu-heading-section($palette-of-taste-secondary-color);
+      @include menu-heading-section(lighten($palette-of-taste-primary-color, 15%));
       p{
         display: inline-block;
         margin: 10px 0;
-        font-size: 24px;
+        font-size: map-get($font-size-palette-of-taste, palette-of-taste__paragraph);
         width: 85%;
         &.price{
           width: 10%;
-          font-size: 26px;
+          font-size: map-get($font-size-palette-of-taste, palette-of-taste__price);
           font-weight: 600;
           text-align: right;
           vertical-align: top;

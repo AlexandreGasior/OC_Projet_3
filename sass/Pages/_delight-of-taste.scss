@@ -1,58 +1,51 @@
 /*DELIGHT-OF-TASTE*/
 #delight-of-taste{
-  @include menu-page;
+  @include menu-page-container;
   h2{
-    font-size: 45px;
-    margin-bottom: 20px;
-    &.heading{
-      text-shadow: 0 0 10px rgba(0,0,0,.2);
-    }
+    font-size: map-get($font-size-general, h2-each-page-presentation);
+    @include main-title;
   }
-  .delight-of-taste-menu{
-    width: 75%;
-    background-color: $delight-of-taste-bg;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+  .delight-of-taste__menu{
     @include menus-font;
-    padding: 65px 0;
-    @media (max-width: map-get($breakpoint, large)){
-      width: 90%;
-    }
+    @include each-menu-display($delight-of-taste-bg);
     h2{
+      font-size: map-get($font-size-delight-of-taste, h2-delight-of-taste__menu);
       margin-top: 60px;
-      font-size: 75px;
       font-weight: bold;
+      text-align: center;
+      padding: 0.3rem;
       @include delight-of-taste-font;
       @include linear-gradient($delight-of-taste-primary-color, $delight-of-taste-third-color);
+      @media (max-width: map-get($breakpoint, small)){
+        font-size: map-get($font-size-delight-of-taste, h2-delight-of-taste__menu--small);
+      }
     }
     section{
       width: 80%;
       h3{
-        font-size: 35px;
+        font-size: map-get($font-size-delight-of-taste, h3-delight-of-taste__menu);
         font-weight: normal;
         text-align: center;
         margin: 0;
       }
-      &.entree{
+      &.menu__entree{
         margin-top: 100px;
       }
-      &.meal{
+      &.menu__meal{
         margin-top: 75px;
       }
-      &.dessert{
+      &.menu__dessert{
         margin: 75px 0;
       }
       @include menu-heading-section($delight-of-taste-primary-color, $delight-of-taste-secondary-color, $delight-of-taste-third-color);
       p{
         display: inline-block;
         margin: 10px 0;
-        font-size: 24px;
+        font-size: map-get($font-size-delight-of-taste, delight-of-taste__paragraph);
         width: 85%;
         &.price{
           width: 10%;
-          font-size: 26px;
+          font-size: map-get($font-size-delight-of-taste, delight-of-taste__price);
           font-weight: 600;
           text-align: right;
           vertical-align: top;

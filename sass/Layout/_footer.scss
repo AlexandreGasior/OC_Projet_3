@@ -10,17 +10,17 @@ footer{
   .footer__link{
     margin: 25px 15px;
     font-weight: 500;
-    font-size: 1.6em;
+    font-size: map-get($font-size-general, footer__link--x-large);
     text-transform: capitalize;
     color: $font-color;
     &:hover{
       animation: wiggle 300ms infinite;
     }
-    @media (max-width: 992px){
-      font-size: 1.2em;
+    @media (max-width: map-get($breakpoint, large)){
+      font-size: map-get($font-size-general, footer__link--large);
     }
-    @media (max-width: 400px){
-      font-size: 0.9em;
+    @media (max-width: map-get($breakpoint, x-small)){
+      font-size: map-get($font-size-general, footer__link--x-small);
     }
   }
 }

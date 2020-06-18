@@ -1,68 +1,60 @@
 /*FRENCH-CHIC*/
 #french-chic{
-  @include menu-page;
+  @include menu-page-container;
   h2{
-    font-size: 55px;
-    margin-bottom: 20px;
-    &.heading{
-      text-shadow: 0 0 10px rgba(0,0,0,.2);
-    }
+    font-size: map-get($font-size-general, h2-each-page-presentation);
+    @include main-title;
   }
-  .french-chic-menu{
-    width: 75%;
-    background-color: $french-chic-bg;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+  .french-chic__menu{
     @include french-chic-secondary-font;
-    padding: 65px 0;
-    @media (max-width: map-get($breakpoint, large)){
-      width: 90%;
-    }
+    @include each-menu-display($french-chic-bg);
     h2{
+      font-size: map-get($font-size-french-chic, h2-french-chic__menu);
       margin-top: 60px;
-      font-size: 45px;
-      @include french-chic-font;
       font-weight: bold;
-      @include linear-gradient($french-chic-primary-color, $french-chic-third-color)
+      text-align: center;
+      @include french-chic-font;
+      @include linear-gradient($french-chic-primary-color, $french-chic-third-color);
+      @media (max-width: map-get($breakpoint, small)){
+        font-size: map-get($font-size-french-chic, h2-french-chic__menu--small);
+      }
     }
     section{
       width: 80%;
       h3{
-        font-size: 35px;
+        font-size: map-get($font-size-french-chic, h3-french-chic__menu);
         text-align: center;
         margin: 0;
       }
-      &.entree{
+      &.menu__entree{
         margin-top: 100px;
         color: $french-chic-primary-color;
         @include menu-heading-section($french-chic-primary-color);
       }
-      &.meal{
+      &.menu__meal{
         margin-top: 75px;
         color: $french-chic-secondary-color;
         @include menu-heading-section($french-chic-secondary-color);
       }
-      &.dessert{
+      &.menu__dessert{
         margin: 75px 0;
         color: $french-chic-third-color;
         @include menu-heading-section($french-chic-third-color);
+        p{
+          width: 100%;
+        }
       }
       p{
         display: inline-block;
         margin: 10px 0;
-        font-size: 24px;
+        font-size: map-get($font-size-french-chic, french-chic__paragraph);
         width: 85%;
         &.price{
           width: 10%;
-          font-size: 26px;
+          font-size: map-get($font-size-french-chic, french-chic__price);
           text-align: right;
           vertical-align: top;
         }
-      }
-      &.dessert p{
-        width: 100%;
       }
     }
   }
