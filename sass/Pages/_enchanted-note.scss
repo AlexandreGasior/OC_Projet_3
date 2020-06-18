@@ -18,13 +18,13 @@
     @include menus-font;
     color: $enchanted-note-primary-color;
     padding: 65px 0;
-    @media (max-width: 992px){
+    @media (max-width: map-get($breakpoint, large)){
       width: 90%;
     }
     i{
       margin-top: 60px;
       font-size: 70px;
-      @include linear-gradient($enchanted-note-secondary-color, $enchanted-note-tertiary-color);
+      @include linear-gradient($enchanted-note-secondary-color, $enchanted-note-third-color);
     }
     h2{
       margin-top: 10px;

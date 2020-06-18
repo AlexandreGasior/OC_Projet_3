@@ -10,7 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    @media (max-width: 992px){
+    @media (max-width: map-get($breakpoint, large)){
       width: 90%;
       padding: 50px 0;
     }
@@ -20,7 +20,7 @@
       height: 300px;
       box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
       cursor: pointer;
-      @media (max-width: 576px){
+      @media (max-width: map-get($breakpoint, small)){
         width: 80%;
       }
       &.enchanted-note{
@@ -30,7 +30,7 @@
         @include menu-display($enchanted-note-bg);
         i{
           font-size: 2.5em;
-          @include linear-gradient($enchanted-note-secondary-color, $enchanted-note-tertiary-color);
+          @include linear-gradient($enchanted-note-secondary-color, $enchanted-note-third-color);
         }
         h2{
           @include enchanted-note-font;
@@ -53,12 +53,12 @@
           @include menu-hover;
         }
         @include menu-display($french-chic-bg);
-        @media (max-width: 576px){
+        @media (max-width: map-get($breakpoint, small)){
           margin-top: 40px;
         }
         h2{
           @include french-chic-font;
-          @include linear-gradient($french-chic-primary-color, $french-chic-tertiary-color);
+          @include linear-gradient($french-chic-primary-color, $french-chic-third-color);
           font-size: 1em;
           font-weight: normal;
           margin: 0 0 0.5em 0;
@@ -79,7 +79,7 @@
         @include menu-display($delight-of-taste-bg);
         h2{
           @include delight-of-taste-font;
-          @include linear-gradient($delight-of-taste-primary-color, $delight-of-taste-secondary-color);
+          @include linear-gradient($delight-of-taste-primary-color, $delight-of-taste-third-color);
           font-size: 1.2em;
           font-weight: normal;
           margin: 0 0 0.5em 0;
@@ -135,12 +135,12 @@
             animation-delay: 0.4s;
         }
     }
-    @media (max-width: 992px){
+    @media (max-width: map-get($breakpoint, large)){
       height: 50px;
       max-width: 250px;
       font-size: 1.8em;
     }
-    @media (max-width: 400px){
+    @media (max-width: map-get($breakpoint, x-small)){
       height: 40px;
       max-width: 200px;
       font-size: 1.3em;

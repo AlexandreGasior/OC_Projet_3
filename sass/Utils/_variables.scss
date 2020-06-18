@@ -4,14 +4,22 @@ $font-color: #FDCB46;
 $enchanted-note-bg: #FCDFDB;
 $enchanted-note-primary-color: #3D1319;
 $enchanted-note-secondary-color: #EF475F;
-$enchanted-note-tertiary-color: #F6916A;
+$enchanted-note-third-color: #F6916A;
 $french-chic-bg: #FFF5FE;
 $french-chic-primary-color: #C67412;
 $french-chic-secondary-color: #A56799;
-$french-chic-tertiary-color: #6E4CCC;
+$french-chic-third-color: #6E4CCC;
 $delight-of-taste-bg: #F9F9F9;
 $delight-of-taste-primary-color: #0228DD;
-$delight-of-taste-secondary-color: #229DF9;
+$delight-of-taste-secondary-color: #0670F3;
+$delight-of-taste-third-color: #229DF9;
 $palette-of-taste-bg: #FDFFFD;
 $palette-of-taste-primary-color: #3D923A;
 $palette-of-taste-secondary-color: #BEFF7F;
+
+/* BREAKPOINT */
+$breakpoint: (
+  "x-small": 400px,
+  "small": 576px,
+  "large": 992px,
+);

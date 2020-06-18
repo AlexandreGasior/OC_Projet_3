@@ -17,7 +17,7 @@
     box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
     @include french-chic-secondary-font;
     padding: 65px 0;
-    @media (max-width: 992px){
+    @media (max-width: map-get($breakpoint, large)){
       width: 90%;
     }
     h2{
@@ -25,7 +25,7 @@
       font-size: 45px;
       @include french-chic-font;
       font-weight: bold;
-      @include linear-gradient($french-chic-primary-color, $french-chic-tertiary-color)
+      @include linear-gradient($french-chic-primary-color, $french-chic-third-color)
     }
     section{
       width: 80%;
@@ -46,8 +46,8 @@
       }
       &.dessert{
         margin: 75px 0;
-        color: $french-chic-tertiary-color;
-        @include menu-heading-section($french-chic-tertiary-color);
+        color: $french-chic-third-color;
+        @include menu-heading-section($french-chic-third-color);
       }
       p{
         display: inline-block;
