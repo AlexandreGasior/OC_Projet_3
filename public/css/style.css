@@ -58,14 +58,6 @@
     transform: rotate(-3deg);
   }
 }
-@keyframes underline-animation {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
 /*GENERAL*/
 body {
   margin: 0;
@@ -434,6 +426,7 @@ footer .footer__link:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 25px;
 }
 @media (max-width: 576px) {
   #enchanted-note .enchanted-note__menu section .entree__heading, #enchanted-note .enchanted-note__menu section .meal__heading, #enchanted-note .enchanted-note__menu section .dessert__heading {
@@ -454,17 +447,17 @@ footer .footer__link:hover {
 #enchanted-note .enchanted-note__menu section .entree__heading .after-heading-title, #enchanted-note .enchanted-note__menu section .meal__heading .after-heading-title, #enchanted-note .enchanted-note__menu section .dessert__heading .after-heading-title {
   text-align: right;
 }
-#enchanted-note .enchanted-note__menu section .entree__heading .heading-title hr.entree, #enchanted-note .enchanted-note__menu section .meal__heading .heading-title hr.entree, #enchanted-note .enchanted-note__menu section .dessert__heading .heading-title hr.entree {
-  border: 1px solid #3D1319;
+#enchanted-note .enchanted-note__menu section .entree__heading .heading-title, #enchanted-note .enchanted-note__menu section .meal__heading .heading-title, #enchanted-note .enchanted-note__menu section .dessert__heading .heading-title {
+  text-align: center;
 }
-#enchanted-note .enchanted-note__menu section .entree__heading .heading-title hr.meal, #enchanted-note .enchanted-note__menu section .meal__heading .heading-title hr.meal, #enchanted-note .enchanted-note__menu section .dessert__heading .heading-title hr.meal {
-  border: 1px solid #3D1319;
+#enchanted-note .enchanted-note__menu section .entree__heading .heading-title h3, #enchanted-note .enchanted-note__menu section .meal__heading .heading-title h3, #enchanted-note .enchanted-note__menu section .dessert__heading .heading-title h3 {
+  display: inline;
+  background: linear-gradient(to top, #3D1319 5%, transparent 5.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
 }
-#enchanted-note .enchanted-note__menu section .entree__heading .heading-title hr.dessert, #enchanted-note .enchanted-note__menu section .meal__heading .heading-title hr.dessert, #enchanted-note .enchanted-note__menu section .dessert__heading .heading-title hr.dessert {
-  border: 1px solid #3D1319;
-}
-#enchanted-note .enchanted-note__menu section .heading-title:hover hr {
-  animation: underline-animation 2s;
+#enchanted-note .enchanted-note__menu section .entree__heading .heading-title h3:hover, #enchanted-note .enchanted-note__menu section .meal__heading .heading-title h3:hover, #enchanted-note .enchanted-note__menu section .dessert__heading .heading-title h3:hover {
+  background-size: 100% 100%;
 }
 #enchanted-note .enchanted-note__menu section p {
   display: inline-block;
@@ -482,6 +475,7 @@ footer .footer__link:hover {
 #enchanted-note .enchanted-note__menu h4 {
   font-family: "Devonshire", cursive;
   font-size: 3rem;
+  text-align: center;
 }
 #enchanted-note .enchanted-note__menu h4 i {
   font-size: 3rem;
@@ -550,6 +544,7 @@ footer .footer__link:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 25px;
 }
 @media (max-width: 576px) {
   #french-chic .french-chic__menu section.menu__entree .entree__heading, #french-chic .french-chic__menu section.menu__entree .meal__heading, #french-chic .french-chic__menu section.menu__entree .dessert__heading {
@@ -570,14 +565,17 @@ footer .footer__link:hover {
 #french-chic .french-chic__menu section.menu__entree .entree__heading .after-heading-title, #french-chic .french-chic__menu section.menu__entree .meal__heading .after-heading-title, #french-chic .french-chic__menu section.menu__entree .dessert__heading .after-heading-title {
   text-align: right;
 }
-#french-chic .french-chic__menu section.menu__entree .entree__heading .heading-title hr.entree, #french-chic .french-chic__menu section.menu__entree .meal__heading .heading-title hr.entree, #french-chic .french-chic__menu section.menu__entree .dessert__heading .heading-title hr.entree {
-  border: 1px solid #C67412;
+#french-chic .french-chic__menu section.menu__entree .entree__heading .heading-title, #french-chic .french-chic__menu section.menu__entree .meal__heading .heading-title, #french-chic .french-chic__menu section.menu__entree .dessert__heading .heading-title {
+  text-align: center;
 }
-#french-chic .french-chic__menu section.menu__entree .entree__heading .heading-title hr.meal, #french-chic .french-chic__menu section.menu__entree .meal__heading .heading-title hr.meal, #french-chic .french-chic__menu section.menu__entree .dessert__heading .heading-title hr.meal {
-  border: 1px solid #C67412;
+#french-chic .french-chic__menu section.menu__entree .entree__heading .heading-title h3, #french-chic .french-chic__menu section.menu__entree .meal__heading .heading-title h3, #french-chic .french-chic__menu section.menu__entree .dessert__heading .heading-title h3 {
+  display: inline;
+  background: linear-gradient(to top, #C67412 5%, transparent 5.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
 }
-#french-chic .french-chic__menu section.menu__entree .entree__heading .heading-title hr.dessert, #french-chic .french-chic__menu section.menu__entree .meal__heading .heading-title hr.dessert, #french-chic .french-chic__menu section.menu__entree .dessert__heading .heading-title hr.dessert {
-  border: 1px solid #C67412;
+#french-chic .french-chic__menu section.menu__entree .entree__heading .heading-title h3:hover, #french-chic .french-chic__menu section.menu__entree .meal__heading .heading-title h3:hover, #french-chic .french-chic__menu section.menu__entree .dessert__heading .heading-title h3:hover {
+  background-size: 100% 100%;
 }
 #french-chic .french-chic__menu section.menu__meal {
   margin-top: 75px;
@@ -588,6 +586,7 @@ footer .footer__link:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 25px;
 }
 @media (max-width: 576px) {
   #french-chic .french-chic__menu section.menu__meal .entree__heading, #french-chic .french-chic__menu section.menu__meal .meal__heading, #french-chic .french-chic__menu section.menu__meal .dessert__heading {
@@ -608,14 +607,17 @@ footer .footer__link:hover {
 #french-chic .french-chic__menu section.menu__meal .entree__heading .after-heading-title, #french-chic .french-chic__menu section.menu__meal .meal__heading .after-heading-title, #french-chic .french-chic__menu section.menu__meal .dessert__heading .after-heading-title {
   text-align: right;
 }
-#french-chic .french-chic__menu section.menu__meal .entree__heading .heading-title hr.entree, #french-chic .french-chic__menu section.menu__meal .meal__heading .heading-title hr.entree, #french-chic .french-chic__menu section.menu__meal .dessert__heading .heading-title hr.entree {
-  border: 1px solid #A56799;
+#french-chic .french-chic__menu section.menu__meal .entree__heading .heading-title, #french-chic .french-chic__menu section.menu__meal .meal__heading .heading-title, #french-chic .french-chic__menu section.menu__meal .dessert__heading .heading-title {
+  text-align: center;
 }
-#french-chic .french-chic__menu section.menu__meal .entree__heading .heading-title hr.meal, #french-chic .french-chic__menu section.menu__meal .meal__heading .heading-title hr.meal, #french-chic .french-chic__menu section.menu__meal .dessert__heading .heading-title hr.meal {
-  border: 1px solid #A56799;
+#french-chic .french-chic__menu section.menu__meal .entree__heading .heading-title h3, #french-chic .french-chic__menu section.menu__meal .meal__heading .heading-title h3, #french-chic .french-chic__menu section.menu__meal .dessert__heading .heading-title h3 {
+  display: inline;
+  background: linear-gradient(to top, #A56799 5%, transparent 5.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
 }
-#french-chic .french-chic__menu section.menu__meal .entree__heading .heading-title hr.dessert, #french-chic .french-chic__menu section.menu__meal .meal__heading .heading-title hr.dessert, #french-chic .french-chic__menu section.menu__meal .dessert__heading .heading-title hr.dessert {
-  border: 1px solid #A56799;
+#french-chic .french-chic__menu section.menu__meal .entree__heading .heading-title h3:hover, #french-chic .french-chic__menu section.menu__meal .meal__heading .heading-title h3:hover, #french-chic .french-chic__menu section.menu__meal .dessert__heading .heading-title h3:hover {
+  background-size: 100% 100%;
 }
 #french-chic .french-chic__menu section.menu__dessert {
   margin: 75px 0;
@@ -626,6 +628,7 @@ footer .footer__link:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 25px;
 }
 @media (max-width: 576px) {
   #french-chic .french-chic__menu section.menu__dessert .entree__heading, #french-chic .french-chic__menu section.menu__dessert .meal__heading, #french-chic .french-chic__menu section.menu__dessert .dessert__heading {
@@ -646,14 +649,17 @@ footer .footer__link:hover {
 #french-chic .french-chic__menu section.menu__dessert .entree__heading .after-heading-title, #french-chic .french-chic__menu section.menu__dessert .meal__heading .after-heading-title, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .after-heading-title {
   text-align: right;
 }
-#french-chic .french-chic__menu section.menu__dessert .entree__heading .heading-title hr.entree, #french-chic .french-chic__menu section.menu__dessert .meal__heading .heading-title hr.entree, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .heading-title hr.entree {
-  border: 1px solid #6E4CCC;
+#french-chic .french-chic__menu section.menu__dessert .entree__heading .heading-title, #french-chic .french-chic__menu section.menu__dessert .meal__heading .heading-title, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .heading-title {
+  text-align: center;
 }
-#french-chic .french-chic__menu section.menu__dessert .entree__heading .heading-title hr.meal, #french-chic .french-chic__menu section.menu__dessert .meal__heading .heading-title hr.meal, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .heading-title hr.meal {
-  border: 1px solid #6E4CCC;
+#french-chic .french-chic__menu section.menu__dessert .entree__heading .heading-title h3, #french-chic .french-chic__menu section.menu__dessert .meal__heading .heading-title h3, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .heading-title h3 {
+  display: inline;
+  background: linear-gradient(to top, #6E4CCC 5%, transparent 5.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
 }
-#french-chic .french-chic__menu section.menu__dessert .entree__heading .heading-title hr.dessert, #french-chic .french-chic__menu section.menu__dessert .meal__heading .heading-title hr.dessert, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .heading-title hr.dessert {
-  border: 1px solid #6E4CCC;
+#french-chic .french-chic__menu section.menu__dessert .entree__heading .heading-title h3:hover, #french-chic .french-chic__menu section.menu__dessert .meal__heading .heading-title h3:hover, #french-chic .french-chic__menu section.menu__dessert .dessert__heading .heading-title h3:hover {
+  background-size: 100% 100%;
 }
 #french-chic .french-chic__menu section.menu__dessert p {
   width: 100%;
@@ -730,45 +736,125 @@ footer .footer__link:hover {
 #delight-of-taste .delight-of-taste__menu section.menu__entree {
   margin-top: 100px;
 }
-#delight-of-taste .delight-of-taste__menu section.menu__meal {
-  margin-top: 75px;
-}
-#delight-of-taste .delight-of-taste__menu section.menu__dessert {
-  margin: 75px 0;
-}
-#delight-of-taste .delight-of-taste__menu section .entree__heading, #delight-of-taste .delight-of-taste__menu section .meal__heading, #delight-of-taste .delight-of-taste__menu section .dessert__heading {
+#delight-of-taste .delight-of-taste__menu section.menu__entree .entree__heading, #delight-of-taste .delight-of-taste__menu section.menu__entree .meal__heading, #delight-of-taste .delight-of-taste__menu section.menu__entree .dessert__heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 25px;
 }
 @media (max-width: 576px) {
-  #delight-of-taste .delight-of-taste__menu section .entree__heading, #delight-of-taste .delight-of-taste__menu section .meal__heading, #delight-of-taste .delight-of-taste__menu section .dessert__heading {
+  #delight-of-taste .delight-of-taste__menu section.menu__entree .entree__heading, #delight-of-taste .delight-of-taste__menu section.menu__entree .meal__heading, #delight-of-taste .delight-of-taste__menu section.menu__entree .dessert__heading {
     flex-direction: column;
   }
 }
-#delight-of-taste .delight-of-taste__menu section .entree__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section .meal__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section .dessert__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section .dessert__heading .after-heading-title {
+#delight-of-taste .delight-of-taste__menu section.menu__entree .entree__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .meal__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .dessert__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .dessert__heading .after-heading-title {
   width: 30%;
 }
-#delight-of-taste .delight-of-taste__menu section .entree__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section .entree__heading .after-heading-title img, #delight-of-taste .delight-of-taste__menu section .meal__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section .meal__heading .after-heading-title img, #delight-of-taste .delight-of-taste__menu section .dessert__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section .dessert__heading .after-heading-title img {
+#delight-of-taste .delight-of-taste__menu section.menu__entree .entree__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__entree .entree__heading .after-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__entree .meal__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__entree .meal__heading .after-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__entree .dessert__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__entree .dessert__heading .after-heading-title img {
   max-width: 100%;
 }
 @media (max-width: 576px) {
-  #delight-of-taste .delight-of-taste__menu section .entree__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section .meal__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section .dessert__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section .dessert__heading .after-heading-title {
+  #delight-of-taste .delight-of-taste__menu section.menu__entree .entree__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .meal__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .dessert__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .dessert__heading .after-heading-title {
     width: auto;
   }
 }
-#delight-of-taste .delight-of-taste__menu section .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section .dessert__heading .after-heading-title {
+#delight-of-taste .delight-of-taste__menu section.menu__entree .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .dessert__heading .after-heading-title {
   text-align: right;
 }
-#delight-of-taste .delight-of-taste__menu section .entree__heading .heading-title hr.entree, #delight-of-taste .delight-of-taste__menu section .meal__heading .heading-title hr.entree, #delight-of-taste .delight-of-taste__menu section .dessert__heading .heading-title hr.entree {
-  border: 1px solid #0228DD;
+#delight-of-taste .delight-of-taste__menu section.menu__entree .entree__heading .heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .meal__heading .heading-title, #delight-of-taste .delight-of-taste__menu section.menu__entree .dessert__heading .heading-title {
+  text-align: center;
 }
-#delight-of-taste .delight-of-taste__menu section .entree__heading .heading-title hr.meal, #delight-of-taste .delight-of-taste__menu section .meal__heading .heading-title hr.meal, #delight-of-taste .delight-of-taste__menu section .dessert__heading .heading-title hr.meal {
-  border: 1px solid #0670F3;
+#delight-of-taste .delight-of-taste__menu section.menu__entree .entree__heading .heading-title h3, #delight-of-taste .delight-of-taste__menu section.menu__entree .meal__heading .heading-title h3, #delight-of-taste .delight-of-taste__menu section.menu__entree .dessert__heading .heading-title h3 {
+  display: inline;
+  background: linear-gradient(to top, #0228DD 5%, transparent 5.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
 }
-#delight-of-taste .delight-of-taste__menu section .entree__heading .heading-title hr.dessert, #delight-of-taste .delight-of-taste__menu section .meal__heading .heading-title hr.dessert, #delight-of-taste .delight-of-taste__menu section .dessert__heading .heading-title hr.dessert {
-  border: 1px solid #229DF9;
+#delight-of-taste .delight-of-taste__menu section.menu__entree .entree__heading .heading-title h3:hover, #delight-of-taste .delight-of-taste__menu section.menu__entree .meal__heading .heading-title h3:hover, #delight-of-taste .delight-of-taste__menu section.menu__entree .dessert__heading .heading-title h3:hover {
+  background-size: 100% 100%;
+}
+#delight-of-taste .delight-of-taste__menu section.menu__meal {
+  margin-top: 75px;
+}
+#delight-of-taste .delight-of-taste__menu section.menu__meal .entree__heading, #delight-of-taste .delight-of-taste__menu section.menu__meal .meal__heading, #delight-of-taste .delight-of-taste__menu section.menu__meal .dessert__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+@media (max-width: 576px) {
+  #delight-of-taste .delight-of-taste__menu section.menu__meal .entree__heading, #delight-of-taste .delight-of-taste__menu section.menu__meal .meal__heading, #delight-of-taste .delight-of-taste__menu section.menu__meal .dessert__heading {
+    flex-direction: column;
+  }
+}
+#delight-of-taste .delight-of-taste__menu section.menu__meal .entree__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .meal__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .dessert__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .dessert__heading .after-heading-title {
+  width: 30%;
+}
+#delight-of-taste .delight-of-taste__menu section.menu__meal .entree__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__meal .entree__heading .after-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__meal .meal__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__meal .meal__heading .after-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__meal .dessert__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__meal .dessert__heading .after-heading-title img {
+  max-width: 100%;
+}
+@media (max-width: 576px) {
+  #delight-of-taste .delight-of-taste__menu section.menu__meal .entree__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .meal__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .dessert__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .dessert__heading .after-heading-title {
+    width: auto;
+  }
+}
+#delight-of-taste .delight-of-taste__menu section.menu__meal .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .dessert__heading .after-heading-title {
+  text-align: right;
+}
+#delight-of-taste .delight-of-taste__menu section.menu__meal .entree__heading .heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .meal__heading .heading-title, #delight-of-taste .delight-of-taste__menu section.menu__meal .dessert__heading .heading-title {
+  text-align: center;
+}
+#delight-of-taste .delight-of-taste__menu section.menu__meal .entree__heading .heading-title h3, #delight-of-taste .delight-of-taste__menu section.menu__meal .meal__heading .heading-title h3, #delight-of-taste .delight-of-taste__menu section.menu__meal .dessert__heading .heading-title h3 {
+  display: inline;
+  background: linear-gradient(to top, #0670F3 5%, transparent 5.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+}
+#delight-of-taste .delight-of-taste__menu section.menu__meal .entree__heading .heading-title h3:hover, #delight-of-taste .delight-of-taste__menu section.menu__meal .meal__heading .heading-title h3:hover, #delight-of-taste .delight-of-taste__menu section.menu__meal .dessert__heading .heading-title h3:hover {
+  background-size: 100% 100%;
+}
+#delight-of-taste .delight-of-taste__menu section.menu__dessert {
+  margin: 75px 0;
+}
+#delight-of-taste .delight-of-taste__menu section.menu__dessert .entree__heading, #delight-of-taste .delight-of-taste__menu section.menu__dessert .meal__heading, #delight-of-taste .delight-of-taste__menu section.menu__dessert .dessert__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+@media (max-width: 576px) {
+  #delight-of-taste .delight-of-taste__menu section.menu__dessert .entree__heading, #delight-of-taste .delight-of-taste__menu section.menu__dessert .meal__heading, #delight-of-taste .delight-of-taste__menu section.menu__dessert .dessert__heading {
+    flex-direction: column;
+  }
+}
+#delight-of-taste .delight-of-taste__menu section.menu__dessert .entree__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .meal__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .dessert__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .dessert__heading .after-heading-title {
+  width: 30%;
+}
+#delight-of-taste .delight-of-taste__menu section.menu__dessert .entree__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__dessert .entree__heading .after-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__dessert .meal__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__dessert .meal__heading .after-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__dessert .dessert__heading .before-heading-title img, #delight-of-taste .delight-of-taste__menu section.menu__dessert .dessert__heading .after-heading-title img {
+  max-width: 100%;
+}
+@media (max-width: 576px) {
+  #delight-of-taste .delight-of-taste__menu section.menu__dessert .entree__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .meal__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .dessert__heading .before-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .dessert__heading .after-heading-title {
+    width: auto;
+  }
+}
+#delight-of-taste .delight-of-taste__menu section.menu__dessert .entree__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .meal__heading .after-heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .dessert__heading .after-heading-title {
+  text-align: right;
+}
+#delight-of-taste .delight-of-taste__menu section.menu__dessert .entree__heading .heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .meal__heading .heading-title, #delight-of-taste .delight-of-taste__menu section.menu__dessert .dessert__heading .heading-title {
+  text-align: center;
+}
+#delight-of-taste .delight-of-taste__menu section.menu__dessert .entree__heading .heading-title h3, #delight-of-taste .delight-of-taste__menu section.menu__dessert .meal__heading .heading-title h3, #delight-of-taste .delight-of-taste__menu section.menu__dessert .dessert__heading .heading-title h3 {
+  display: inline;
+  background: linear-gradient(to top, #229DF9 5%, transparent 5.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
+}
+#delight-of-taste .delight-of-taste__menu section.menu__dessert .entree__heading .heading-title h3:hover, #delight-of-taste .delight-of-taste__menu section.menu__dessert .meal__heading .heading-title h3:hover, #delight-of-taste .delight-of-taste__menu section.menu__dessert .dessert__heading .heading-title h3:hover {
+  background-size: 100% 100%;
 }
 #delight-of-taste .delight-of-taste__menu section p {
   display: inline-block;
@@ -853,6 +939,7 @@ footer .footer__link:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 25px;
 }
 @media (max-width: 576px) {
   #palette-of-taste .palette-of-taste__menu section .entree__heading, #palette-of-taste .palette-of-taste__menu section .meal__heading, #palette-of-taste .palette-of-taste__menu section .dessert__heading {
@@ -873,14 +960,17 @@ footer .footer__link:hover {
 #palette-of-taste .palette-of-taste__menu section .entree__heading .after-heading-title, #palette-of-taste .palette-of-taste__menu section .meal__heading .after-heading-title, #palette-of-taste .palette-of-taste__menu section .dessert__heading .after-heading-title {
   text-align: right;
 }
-#palette-of-taste .palette-of-taste__menu section .entree__heading .heading-title hr.entree, #palette-of-taste .palette-of-taste__menu section .meal__heading .heading-title hr.entree, #palette-of-taste .palette-of-taste__menu section .dessert__heading .heading-title hr.entree {
-  border: 1px solid #5ebe5b;
+#palette-of-taste .palette-of-taste__menu section .entree__heading .heading-title, #palette-of-taste .palette-of-taste__menu section .meal__heading .heading-title, #palette-of-taste .palette-of-taste__menu section .dessert__heading .heading-title {
+  text-align: center;
 }
-#palette-of-taste .palette-of-taste__menu section .entree__heading .heading-title hr.meal, #palette-of-taste .palette-of-taste__menu section .meal__heading .heading-title hr.meal, #palette-of-taste .palette-of-taste__menu section .dessert__heading .heading-title hr.meal {
-  border: 1px solid #5ebe5b;
+#palette-of-taste .palette-of-taste__menu section .entree__heading .heading-title h3, #palette-of-taste .palette-of-taste__menu section .meal__heading .heading-title h3, #palette-of-taste .palette-of-taste__menu section .dessert__heading .heading-title h3 {
+  display: inline;
+  background: linear-gradient(to top, #5ebe5b 5%, transparent 5.01%) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 300ms;
 }
-#palette-of-taste .palette-of-taste__menu section .entree__heading .heading-title hr.dessert, #palette-of-taste .palette-of-taste__menu section .meal__heading .heading-title hr.dessert, #palette-of-taste .palette-of-taste__menu section .dessert__heading .heading-title hr.dessert {
-  border: 1px solid #5ebe5b;
+#palette-of-taste .palette-of-taste__menu section .entree__heading .heading-title h3:hover, #palette-of-taste .palette-of-taste__menu section .meal__heading .heading-title h3:hover, #palette-of-taste .palette-of-taste__menu section .dessert__heading .heading-title h3:hover {
+  background-size: 100% 100%;
 }
 #palette-of-taste .palette-of-taste__menu section p {
   display: inline-block;

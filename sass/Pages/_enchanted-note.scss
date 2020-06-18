@@ -43,9 +43,6 @@
         }
       }
       @include menu-heading-section($enchanted-note-primary-color);
-      .heading-title:hover hr{
-        animation: underline-animation 2s;
-      }
       p{
         display: inline-block;
         margin: 10px 0;
@@ -63,6 +60,7 @@
     h4{
       @include enchanted-note-font;
       font-size: map-get($font-size-enchanted-note, h4-enchanted-note__menu);
+      text-align: center;
       i{
         font-size: map-get($font-size-enchanted-note, enchanted-note__menu__logo--secondary);
       }

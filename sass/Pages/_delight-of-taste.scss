@@ -30,14 +30,16 @@
       }
       &.menu__entree{
         margin-top: 100px;
+        @include menu-heading-section($delight-of-taste-primary-color);
       }
       &.menu__meal{
         margin-top: 75px;
+        @include menu-heading-section($delight-of-taste-secondary-color);
       }
       &.menu__dessert{
         margin: 75px 0;
+        @include menu-heading-section($delight-of-taste-third-color);
       }
-      @include menu-heading-section($delight-of-taste-primary-color, $delight-of-taste-secondary-color, $delight-of-taste-third-color);
       p{
         display: inline-block;
         margin: 10px 0;

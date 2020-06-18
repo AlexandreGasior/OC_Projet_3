@@ -85,12 +85,13 @@
 }
 
 /* HEADING SECTION ON MENU PAGE */
-@mixin menu-heading-section($hr-color, $hr-color2: $hr-color, $hr-color3: $hr-color){
+@mixin menu-heading-section($underline-color){
   .entree__heading, .meal__heading, .dessert__heading{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 25px;
     @media (max-width: map-get($breakpoint, small)){
       flex-direction: column;
     }
@@ -107,14 +108,15 @@
       text-align: right;
     }
     .heading-title{
-      hr.entree{
-        border: 1px solid $hr-color;
-      }
-      hr.meal{
-        border: 1px solid $hr-color2;
-      }
-      hr.dessert{
-        border: 1px solid $hr-color3;
+      text-align: center;
+      h3{
+      display: inline;
+      background: linear-gradient(to top, $underline-color 5%, transparent 5.01%) no-repeat;
+      background-size: 0 100%;
+      transition: background-size 300ms;
+        &:hover{
+        background-size: 100% 100%;
+        }
       }
     }
   }
