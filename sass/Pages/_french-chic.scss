@@ -25,6 +25,9 @@
         font-size: map-get($font-size-french-chic, h3-french-chic__menu);
         text-align: center;
         margin: 0;
+        @media (max-width: map-get($breakpoint, small)){
+          font-size: map-get($font-size-french-chic, h3-french-chic__menu--small)
+        }
       }
       &.menu__entree{
         margin-top: 100px;

@@ -4,8 +4,7 @@
   align-items: center;
   h2{
     font-size: map-get($font-size-general, h2-each-page-presentation);
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px rgba(0,0,0,.2);
+    @include main-title;
   }
   .content{
     width: 80%;

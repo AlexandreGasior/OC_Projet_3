@@ -48,9 +48,10 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: menu-hover-reverse 150ms ease-in-out;
+  transition: transform 300ms, opacity 300ms 250ms;
   &:hover{
-    animation: menu-hover 300ms ease-in-out forwards;
+    transform: scale(1.2);
+    opacity: 0.5;
   }
 }
 
@@ -65,9 +66,7 @@
 @mixin main-title{
   text-align: center;
   margin-bottom: 20px;
-  &.palette-of-taste__heading{
-    text-shadow: 0 0 10px rgba(0,0,0,.2);
-  }
+  text-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 @mixin each-menu-display($bg-color, $color: black){
