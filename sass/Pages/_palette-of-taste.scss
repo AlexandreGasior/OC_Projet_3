@@ -1,7 +1,7 @@
 /*PALETTE-OF-TASTE*/
 #palette-of-taste{
   @include menu-page-container;
-  h2{
+  h2.palette-of-taste__heading{
     font-size: map-get($font-size-general, h2-each-page-presentation);
     @include main-title;
   }
